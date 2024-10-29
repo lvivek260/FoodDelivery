@@ -8,25 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		1873D5972CD0BB060041F016 /* FoodDeliveryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1873D5962CD0BB060041F016 /* FoodDeliveryApp.swift */; };
-		1873D5992CD0BB060041F016 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1873D5982CD0BB060041F016 /* ContentView.swift */; };
 		1873D59B2CD0BB0C0041F016 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1873D59A2CD0BB0C0041F016 /* Assets.xcassets */; };
 		1873D59E2CD0BB0C0041F016 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1873D59D2CD0BB0C0041F016 /* Preview Assets.xcassets */; };
 		1873D5AB2CD0BCC80041F016 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1873D5AA2CD0BCC80041F016 /* Color+Extension.swift */; };
 		1873D5AD2CD0BCEB0041F016 /* ColorConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1873D5AC2CD0BCEB0041F016 /* ColorConstants.swift */; };
 		1873D5AF2CD0BD200041F016 /* Image+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1873D5AE2CD0BD200041F016 /* Image+Extension.swift */; };
 		1873D5B12CD0BD370041F016 /* ImageConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1873D5B02CD0BD370041F016 /* ImageConstants.swift */; };
+		1873D5B52CD0D94F0041F016 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1873D5B42CD0D94F0041F016 /* SwiftUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1873D5932CD0BB060041F016 /* FoodDelivery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodDelivery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1873D5962CD0BB060041F016 /* FoodDeliveryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDeliveryApp.swift; sourceTree = "<group>"; };
-		1873D5982CD0BB060041F016 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1873D59A2CD0BB0C0041F016 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1873D59D2CD0BB0C0041F016 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1873D5AA2CD0BCC80041F016 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		1873D5AC2CD0BCEB0041F016 /* ColorConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorConstants.swift; sourceTree = "<group>"; };
 		1873D5AE2CD0BD200041F016 /* Image+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+Extension.swift"; sourceTree = "<group>"; };
 		1873D5B02CD0BD370041F016 /* ImageConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageConstants.swift; sourceTree = "<group>"; };
+		1873D5B42CD0D94F0041F016 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +61,7 @@
 			children = (
 				1873D5A42CD0BC100041F016 /* Application */,
 				1873D5A52CD0BC1F0041F016 /* Support */,
-				1873D5A62CD0BC2B0041F016 /* Modules  */,
+				1873D5B32CD0D93E0041F016 /* modules  */,
 				1873D5A72CD0BC360041F016 /* Resources  */,
 				1873D59C2CD0BB0C0041F016 /* Preview Content */,
 			);
@@ -93,14 +93,6 @@
 			path = Support;
 			sourceTree = "<group>";
 		};
-		1873D5A62CD0BC2B0041F016 /* Modules  */ = {
-			isa = PBXGroup;
-			children = (
-				1873D5B22CD0D86B0041F016 /* Onboarding */,
-			);
-			path = "Modules ";
-			sourceTree = "<group>";
-		};
 		1873D5A72CD0BC360041F016 /* Resources  */ = {
 			isa = PBXGroup;
 			children = (
@@ -127,12 +119,12 @@
 			path = "Extensions ";
 			sourceTree = "<group>";
 		};
-		1873D5B22CD0D86B0041F016 /* Onboarding */ = {
+		1873D5B32CD0D93E0041F016 /* modules  */ = {
 			isa = PBXGroup;
 			children = (
-				1873D5982CD0BB060041F016 /* ContentView.swift */,
+				1873D5B42CD0D94F0041F016 /* SwiftUIView.swift */,
 			);
-			path = Onboarding;
+			path = "modules ";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,8 +199,8 @@
 			files = (
 				1873D5AF2CD0BD200041F016 /* Image+Extension.swift in Sources */,
 				1873D5B12CD0BD370041F016 /* ImageConstants.swift in Sources */,
+				1873D5B52CD0D94F0041F016 /* SwiftUIView.swift in Sources */,
 				1873D5AB2CD0BCC80041F016 /* Color+Extension.swift in Sources */,
-				1873D5992CD0BB060041F016 /* ContentView.swift in Sources */,
 				1873D5972CD0BB060041F016 /* FoodDeliveryApp.swift in Sources */,
 				1873D5AD2CD0BCEB0041F016 /* ColorConstants.swift in Sources */,
 			);
