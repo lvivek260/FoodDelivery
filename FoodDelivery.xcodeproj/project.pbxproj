@@ -96,7 +96,7 @@
 		1873D5A62CD0BC2B0041F016 /* Modules  */ = {
 			isa = PBXGroup;
 			children = (
-				1873D5982CD0BB060041F016 /* ContentView.swift */,
+				1873D5B22CD0D86B0041F016 /* Onboarding */,
 			);
 			path = "Modules ";
 			sourceTree = "<group>";
@@ -125,6 +125,14 @@
 				1873D5AE2CD0BD200041F016 /* Image+Extension.swift */,
 			);
 			path = "Extensions ";
+			sourceTree = "<group>";
+		};
+		1873D5B22CD0D86B0041F016 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				1873D5982CD0BB060041F016 /* ContentView.swift */,
+			);
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
