@@ -35,6 +35,10 @@
 		188946892CD24198001B5585 /* UIApplication+Extension .swift in Sources */ = {isa = PBXBuildFile; fileRef = 188946882CD24198001B5585 /* UIApplication+Extension .swift */; };
 		1889468B2CD24DB8001B5585 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1889468A2CD24DB8001B5585 /* CustomTextField.swift */; };
 		1889468D2CD25498001B5585 /* PasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1889468C2CD25498001B5585 /* PasswordTextField.swift */; };
+		1889468F2CD26020001B5585 /* LoginAccountViewModel .swift in Sources */ = {isa = PBXBuildFile; fileRef = 1889468E2CD2601F001B5585 /* LoginAccountViewModel .swift */; };
+		188946942CD2625F001B5585 /* CreateAccountView .swift in Sources */ = {isa = PBXBuildFile; fileRef = 188946932CD2625F001B5585 /* CreateAccountView .swift */; };
+		188946962CD262E1001B5585 /* CreateAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188946952CD262E1001B5585 /* CreateAccountViewModel.swift */; };
+		1889469B2CD2689F001B5585 /* CustomToggleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1889469A2CD2689F001B5585 /* CustomToggleButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +71,10 @@
 		188946882CD24198001B5585 /* UIApplication+Extension .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension .swift"; sourceTree = "<group>"; };
 		1889468A2CD24DB8001B5585 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		1889468C2CD25498001B5585 /* PasswordTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordTextField.swift; sourceTree = "<group>"; };
+		1889468E2CD2601F001B5585 /* LoginAccountViewModel .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginAccountViewModel .swift"; sourceTree = "<group>"; };
+		188946932CD2625F001B5585 /* CreateAccountView .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CreateAccountView .swift"; sourceTree = "<group>"; };
+		188946952CD262E1001B5585 /* CreateAccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewModel.swift; sourceTree = "<group>"; };
+		1889469A2CD2689F001B5585 /* CustomToggleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomToggleButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -227,7 +235,7 @@
 		1889467C2CD22DC1001B5585 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				188946832CD23C94001B5585 /* LoginAssets .xcassets */,
+				188946922CD26229001B5585 /* Resources  */,
 				1889467D2CD22DD6001B5585 /* LoginAccount */,
 				188946802CD22DFF001B5585 /* CreateAccount */,
 			);
@@ -254,6 +262,7 @@
 		1889467F2CD22DEF001B5585 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				1889468E2CD2601F001B5585 /* LoginAccountViewModel .swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -261,6 +270,8 @@
 		188946802CD22DFF001B5585 /* CreateAccount */ = {
 			isa = PBXGroup;
 			children = (
+				188946912CD26220001B5585 /* ViewModel */,
+				188946902CD2621A001B5585 /* View */,
 			);
 			path = CreateAccount;
 			sourceTree = "<group>";
@@ -268,11 +279,60 @@
 		188946852CD23FDD001B5585 /* CustomItems  */ = {
 			isa = PBXGroup;
 			children = (
-				188946862CD23FF8001B5585 /* CustomButton.swift */,
+				188946982CD26859001B5585 /* Buttons  */,
+				188946972CD26845001B5585 /* TextFields  */,
+				188946992CD26873001B5585 /* OtherItems  */,
+			);
+			path = "CustomItems ";
+			sourceTree = "<group>";
+		};
+		188946902CD2621A001B5585 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				188946932CD2625F001B5585 /* CreateAccountView .swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		188946912CD26220001B5585 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				188946952CD262E1001B5585 /* CreateAccountViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		188946922CD26229001B5585 /* Resources  */ = {
+			isa = PBXGroup;
+			children = (
+				188946832CD23C94001B5585 /* LoginAssets .xcassets */,
+			);
+			path = "Resources ";
+			sourceTree = "<group>";
+		};
+		188946972CD26845001B5585 /* TextFields  */ = {
+			isa = PBXGroup;
+			children = (
 				1889468A2CD24DB8001B5585 /* CustomTextField.swift */,
 				1889468C2CD25498001B5585 /* PasswordTextField.swift */,
 			);
-			path = "CustomItems ";
+			path = "TextFields ";
+			sourceTree = "<group>";
+		};
+		188946982CD26859001B5585 /* Buttons  */ = {
+			isa = PBXGroup;
+			children = (
+				188946862CD23FF8001B5585 /* CustomButton.swift */,
+			);
+			path = "Buttons ";
+			sourceTree = "<group>";
+		};
+		188946992CD26873001B5585 /* OtherItems  */ = {
+			isa = PBXGroup;
+			children = (
+				1889469A2CD2689F001B5585 /* CustomToggleButton.swift */,
+			);
+			path = "OtherItems ";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -358,18 +418,22 @@
 			files = (
 				1889468B2CD24DB8001B5585 /* CustomTextField.swift in Sources */,
 				1873D5AF2CD0BD200041F016 /* Image+Extension.swift in Sources */,
+				188946942CD2625F001B5585 /* CreateAccountView .swift in Sources */,
 				188946892CD24198001B5585 /* UIApplication+Extension .swift in Sources */,
 				1873D5B12CD0BD370041F016 /* ImageConstants.swift in Sources */,
+				1889469B2CD2689F001B5585 /* CustomToggleButton.swift in Sources */,
 				188946822CD22E2B001B5585 /* LoginAccountView .swift in Sources */,
 				1889468D2CD25498001B5585 /* PasswordTextField.swift in Sources */,
 				1873D5B52CD0D94F0041F016 /* OnboaringView.swift in Sources */,
 				1873D5C92CD0EA410041F016 /* FontConstants .swift in Sources */,
 				188946772CD208C7001B5585 /* CustomPager.swift in Sources */,
+				1889468F2CD26020001B5585 /* LoginAccountViewModel .swift in Sources */,
 				1889467B2CD2296C001B5585 /* OnboardingViewModel.swift in Sources */,
 				1873D5AB2CD0BCC80041F016 /* Color+Extension.swift in Sources */,
 				188946872CD23FF8001B5585 /* CustomButton.swift in Sources */,
 				1873D5972CD0BB060041F016 /* FoodDeliveryApp.swift in Sources */,
 				1873D5CB2CD0EB790041F016 /* Font+Extension.swift in Sources */,
+				188946962CD262E1001B5585 /* CreateAccountViewModel.swift in Sources */,
 				1873D5AD2CD0BCEB0041F016 /* ColorConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

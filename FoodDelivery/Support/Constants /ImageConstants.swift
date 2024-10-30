@@ -21,4 +21,5 @@ enum ImageConstants: String {
     case googleIcon
     case eyeOpen
     case eyeClose
+    case agreeToggleImg
 }

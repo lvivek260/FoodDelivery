@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct LoginAccountView: View {
-    @State var txtEmail: String = ""
-    @State var txtPassword: String = ""
     
+    @ObservedObject private var viewModel = LoginAccountViewModel()
+   
     var body: some View {
         NavigationStack {
             ScrollView {
@@ -26,7 +26,7 @@ struct LoginAccountView: View {
                         
                         forgotPasswordButton
                         
-                        submitButton
+                        signInButton
                         
                         deviderWithOr
                         
@@ -43,9 +43,9 @@ struct LoginAccountView: View {
     
     private var titleSubTitleView: some View {
         VStack(alignment: .leading, spacing: 8) {
-            Text("Login to your\naccount.")
+            Text(viewModel.title)
                 .font(.system(size: 32, weight: .semibold))
-            Text("Please sign in to your account ")
+            Text(viewModel.subTitle)
                 .font(.system(size: 14, weight: .medium))
                 .foregroundStyle(Color(.neutral60))
         }
@@ -54,7 +54,7 @@ struct LoginAccountView: View {
     
     private var emailTextFieldView: some View {
         CustomTextField(
-            text: $txtEmail,
+            text: $viewModel.txtEmail,
             title: "Email Address",
             placeHolder: "Enter email"
         )
@@ -62,7 +62,7 @@ struct LoginAccountView: View {
     
     private var passwordTextFieldView: some View {
         PasswordTextField(
-            text: $txtPassword,
+            text: $viewModel.txtPassword,
             title: "Password",
             placeHolder: "Password"
         )
@@ -70,6 +70,7 @@ struct LoginAccountView: View {
     
     private var forgotPasswordButton: some View {
         HStack {
+            Spacer()
 
             NavigationLink(destination: LoginAccountView()) {
                 Text("Forgot password?")
@@ -79,9 +80,9 @@ struct LoginAccountView: View {
         }
     }
     
-    private var submitButton: some View {
+    private var signInButton: some View {
         CustomButton(title: "Sign in") {
-            
+           
         }
     }
     
@@ -126,7 +127,7 @@ struct LoginAccountView: View {
             Text("Don't have an account?")
                 .font(.system(size: 14, weight: .medium))
             Button(action: {
-                
+                UIApplication.shared.changeRootViewController(to: CreateAccountView())
             }) {
                 Text("Register")
                     .foregroundStyle(Color(.primaryHover))
@@ -138,7 +139,7 @@ struct LoginAccountView: View {
 }
 
 
-fileprivate struct loginButton: View {
+ struct loginButton: View {
     let image: ImageConstants
     let action: () -> Void
     
@@ -150,6 +151,7 @@ fileprivate struct loginButton: View {
         }
     }
 }
+
 
 struct LoginAccountView__Previews: PreviewProvider {
     static var previews: some View {
