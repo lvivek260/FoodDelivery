@@ -8,5 +8,10 @@
 import Foundation
 
 enum ImageConstants: String {
-    case demo
+    //Onboarding Images
+    case firstOnboardingBg
+    case secondOnboardingBg
+    case thirdOnboardingBg
+    case rightArrow
+    case progressButton
 }

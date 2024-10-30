@@ -41,10 +41,10 @@ enum ColorConstants: String {
     case successSurface
     
     //Info
+    case infoBorder
     case infoFocus
     case infoHover
     case infoMain
-    case infoBorder
     case infoPressed
     case infoSurface
     
