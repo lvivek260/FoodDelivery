@@ -14,4 +14,11 @@ enum ImageConstants: String {
     case thirdOnboardingBg
     case rightArrow
     case progressButton
+    
+    //Login Views Images
+    case appleIcon
+    case facebookIcon
+    case googleIcon
+    case eyeOpen
+    case eyeClose
 }

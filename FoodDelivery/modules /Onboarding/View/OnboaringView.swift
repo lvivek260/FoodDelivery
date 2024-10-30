@@ -77,7 +77,7 @@ struct OnboaringView: View {
     
     private var skipButton: some View {
         Button("Skip") {
-           
+            UIApplication.shared.changeRootViewController(to: LoginAccountView())
         }
     }
     
@@ -94,7 +94,7 @@ struct OnboaringView: View {
     
     private var goToLoginButton: some View {
         Button(action: {
-
+            UIApplication.shared.changeRootViewController(to: LoginAccountView())
         }, label: {
             Image(.progressButton)
                 .resizable()
