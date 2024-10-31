@@ -143,7 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				1873D5A42CD0BC100041F016 /* Application */,
-				1873D5A52CD0BC1F0041F016 /* Support */,
+				1873D5A52CD0BC1F0041F016 /* Utility */,
 				1873D5B32CD0D93E0041F016 /* modules  */,
 				1873D5A72CD0BC360041F016 /* Resources  */,
 				1873D59C2CD0BB0C0041F016 /* Preview Content */,
@@ -167,14 +167,14 @@
 			path = Application;
 			sourceTree = "<group>";
 		};
-		1873D5A52CD0BC1F0041F016 /* Support */ = {
+		1873D5A52CD0BC1F0041F016 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
 				1873D5A82CD0BCB10041F016 /* Constants  */,
 				1873D5A92CD0BCBA0041F016 /* Extensions  */,
 				188946852CD23FDD001B5585 /* CustomItems  */,
 			);
-			path = Support;
+			path = Utility;
 			sourceTree = "<group>";
 		};
 		1873D5A72CD0BC360041F016 /* Resources  */ = {
