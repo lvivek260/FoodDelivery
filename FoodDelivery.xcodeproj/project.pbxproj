@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		186F893B2CD3464F008DFB42 /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186F893A2CD3464F008DFB42 /* ForgotPasswordView.swift */; };
+		186F893D2CD34889008DFB42 /* ForgotPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186F893C2CD34889008DFB42 /* ForgotPasswordViewModel.swift */; };
+		186F893F2CD34B59008DFB42 /* ForgotPasswordBottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186F893E2CD34B59008DFB42 /* ForgotPasswordBottomSheetView.swift */; };
+		186F89422CD3599A008DFB42 /* ForgotPasswordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186F89412CD3599A008DFB42 /* ForgotPasswordModel.swift */; };
+		186F89442CD3634A008DFB42 /* NavigationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186F89432CD3634A008DFB42 /* NavigationButton.swift */; };
 		1873D5972CD0BB060041F016 /* FoodDeliveryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1873D5962CD0BB060041F016 /* FoodDeliveryApp.swift */; };
 		1873D59B2CD0BB0C0041F016 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1873D59A2CD0BB0C0041F016 /* Assets.xcassets */; };
 		1873D59E2CD0BB0C0041F016 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1873D59D2CD0BB0C0041F016 /* Preview Assets.xcassets */; };
@@ -42,6 +47,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		186F893A2CD3464F008DFB42 /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
+		186F893C2CD34889008DFB42 /* ForgotPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewModel.swift; sourceTree = "<group>"; };
+		186F893E2CD34B59008DFB42 /* ForgotPasswordBottomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordBottomSheetView.swift; sourceTree = "<group>"; };
+		186F89412CD3599A008DFB42 /* ForgotPasswordModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordModel.swift; sourceTree = "<group>"; };
+		186F89432CD3634A008DFB42 /* NavigationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationButton.swift; sourceTree = "<group>"; };
 		1873D5932CD0BB060041F016 /* FoodDelivery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodDelivery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1873D5962CD0BB060041F016 /* FoodDeliveryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDeliveryApp.swift; sourceTree = "<group>"; };
 		1873D59A2CD0BB0C0041F016 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -88,6 +98,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		186F89382CD34623008DFB42 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				186F893C2CD34889008DFB42 /* ForgotPasswordViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		186F89392CD34628008DFB42 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				186F893A2CD3464F008DFB42 /* ForgotPasswordView.swift */,
+				186F893E2CD34B59008DFB42 /* ForgotPasswordBottomSheetView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		186F89402CD3597C008DFB42 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				186F89412CD3599A008DFB42 /* ForgotPasswordModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		1873D58A2CD0BB060041F016 = {
 			isa = PBXGroup;
 			children = (
@@ -232,12 +267,23 @@
 			path = "Fonts ";
 			sourceTree = "<group>";
 		};
+		188021252CD342B2004A79B9 /* ForgotPassword */ = {
+			isa = PBXGroup;
+			children = (
+				186F89402CD3597C008DFB42 /* Model */,
+				186F89392CD34628008DFB42 /* View */,
+				186F89382CD34623008DFB42 /* ViewModel */,
+			);
+			path = ForgotPassword;
+			sourceTree = "<group>";
+		};
 		1889467C2CD22DC1001B5585 /* Login */ = {
 			isa = PBXGroup;
 			children = (
 				188946922CD26229001B5585 /* Resources  */,
 				1889467D2CD22DD6001B5585 /* LoginAccount */,
 				188946802CD22DFF001B5585 /* CreateAccount */,
+				188021252CD342B2004A79B9 /* ForgotPassword */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -323,6 +369,7 @@
 			isa = PBXGroup;
 			children = (
 				188946862CD23FF8001B5585 /* CustomButton.swift */,
+				186F89432CD3634A008DFB42 /* NavigationButton.swift */,
 			);
 			path = "Buttons ";
 			sourceTree = "<group>";
@@ -417,8 +464,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				1889468B2CD24DB8001B5585 /* CustomTextField.swift in Sources */,
+				186F89422CD3599A008DFB42 /* ForgotPasswordModel.swift in Sources */,
 				1873D5AF2CD0BD200041F016 /* Image+Extension.swift in Sources */,
 				188946942CD2625F001B5585 /* CreateAccountView .swift in Sources */,
+				186F893D2CD34889008DFB42 /* ForgotPasswordViewModel.swift in Sources */,
+				186F89442CD3634A008DFB42 /* NavigationButton.swift in Sources */,
 				188946892CD24198001B5585 /* UIApplication+Extension .swift in Sources */,
 				1873D5B12CD0BD370041F016 /* ImageConstants.swift in Sources */,
 				1889469B2CD2689F001B5585 /* CustomToggleButton.swift in Sources */,
@@ -434,6 +484,8 @@
 				1873D5972CD0BB060041F016 /* FoodDeliveryApp.swift in Sources */,
 				1873D5CB2CD0EB790041F016 /* Font+Extension.swift in Sources */,
 				188946962CD262E1001B5585 /* CreateAccountViewModel.swift in Sources */,
+				186F893B2CD3464F008DFB42 /* ForgotPasswordView.swift in Sources */,
+				186F893F2CD34B59008DFB42 /* ForgotPasswordBottomSheetView.swift in Sources */,
 				1873D5AD2CD0BCEB0041F016 /* ColorConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

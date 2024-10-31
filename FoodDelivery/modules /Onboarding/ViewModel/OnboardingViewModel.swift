@@ -22,4 +22,5 @@ final class OnboardingViewModel: ObservableObject {
     }
     let title = "We serve\nincomparable\ndelicacies"
     let subTitle = "All the best restaurants with their top menu waiting for you, they cant’t wait for your order!!"
+    
 }

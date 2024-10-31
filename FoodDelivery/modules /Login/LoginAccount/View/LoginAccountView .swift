@@ -10,6 +10,7 @@ import SwiftUI
 struct LoginAccountView: View {
     
     @ObservedObject private var viewModel = LoginAccountViewModel()
+    @State var toToForgotPasswordView: Bool = false
    
     var body: some View {
         NavigationStack {
@@ -71,11 +72,30 @@ struct LoginAccountView: View {
     private var forgotPasswordButton: some View {
         HStack {
             Spacer()
-
-            NavigationLink(destination: LoginAccountView()) {
+            
+            NavigationLink(
+                destination: ForgotPasswordView(),
+                isActive: $toToForgotPasswordView ) {
+                    Text("")
+                }
+            
+            Button(action: {
+                viewModel.showForgotPaasswordBottomSheet = true
+            }) {
                 Text("Forgot password?")
                     .font(.system(size: 14, weight: .medium))
                     .foregroundStyle(Color(.primaryHover))
+            }
+            .sheet(isPresented: $viewModel.showForgotPaasswordBottomSheet) {
+                ForgotPasswordBottomSheetView(
+                    navigateToForgotView: {
+                          toToForgotPasswordView = true
+                    },
+                    selfDismiss: {
+                        viewModel.showForgotPaasswordBottomSheet = false
+                    }
+                )
+                  .presentationDetents([.medium, .large])
             }
         }
     }

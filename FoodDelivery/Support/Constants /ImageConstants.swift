@@ -22,4 +22,7 @@ enum ImageConstants: String {
     case eyeOpen
     case eyeClose
     case agreeToggleImg
+    case selectionIcon
+    case emailIcon
+    case whatsAppIcon
 }
