@@ -12,6 +12,8 @@
 		186F893F2CD34B59008DFB42 /* ForgotPasswordBottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186F893E2CD34B59008DFB42 /* ForgotPasswordBottomSheetView.swift */; };
 		186F89422CD3599A008DFB42 /* ForgotPasswordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186F89412CD3599A008DFB42 /* ForgotPasswordModel.swift */; };
 		186F89442CD3634A008DFB42 /* NavigationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186F89432CD3634A008DFB42 /* NavigationButton.swift */; };
+		186F89462CD382DE008DFB42 /* EmailVerificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186F89452CD382DE008DFB42 /* EmailVerificationView.swift */; };
+		186F89482CD38340008DFB42 /* EmailVerificationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186F89472CD38340008DFB42 /* EmailVerificationViewModel.swift */; };
 		1873D5972CD0BB060041F016 /* FoodDeliveryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1873D5962CD0BB060041F016 /* FoodDeliveryApp.swift */; };
 		1873D59B2CD0BB0C0041F016 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1873D59A2CD0BB0C0041F016 /* Assets.xcassets */; };
 		1873D59E2CD0BB0C0041F016 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1873D59D2CD0BB0C0041F016 /* Preview Assets.xcassets */; };
@@ -32,6 +34,10 @@
 		1873D60A2CD0F0E30041F016 /* Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1873D5E62CD0F0E10041F016 /* Inter-Medium.ttf */; };
 		1873D60B2CD0F0E30041F016 /* Inter-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1873D5E72CD0F0E10041F016 /* Inter-Light.ttf */; };
 		1873D6122CD0F0E30041F016 /* Inter-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1873D5EE2CD0F0E20041F016 /* Inter-ExtraLight.ttf */; };
+		1875FEE62CDA217B002685AB /* ResetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1875FEE52CDA217B002685AB /* ResetPasswordView.swift */; };
+		1875FEE82CDA2457002685AB /* ResetPasswordViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1875FEE72CDA2457002685AB /* ResetPasswordViewViewModel.swift */; };
+		1875FEEA2CDA28DA002685AB /* PasswordChangedBottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1875FEE92CDA28DA002685AB /* PasswordChangedBottomSheetView.swift */; };
+		1875FEEC2CDA2B7C002685AB /* OTPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1875FEEB2CDA2B7C002685AB /* OTPView.swift */; };
 		188946772CD208C7001B5585 /* CustomPager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188946762CD208C7001B5585 /* CustomPager.swift */; };
 		1889467B2CD2296C001B5585 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1889467A2CD2296C001B5585 /* OnboardingViewModel.swift */; };
 		188946822CD22E2B001B5585 /* LoginAccountView .swift in Sources */ = {isa = PBXBuildFile; fileRef = 188946812CD22E2B001B5585 /* LoginAccountView .swift */; };
@@ -52,6 +58,8 @@
 		186F893E2CD34B59008DFB42 /* ForgotPasswordBottomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordBottomSheetView.swift; sourceTree = "<group>"; };
 		186F89412CD3599A008DFB42 /* ForgotPasswordModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordModel.swift; sourceTree = "<group>"; };
 		186F89432CD3634A008DFB42 /* NavigationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationButton.swift; sourceTree = "<group>"; };
+		186F89452CD382DE008DFB42 /* EmailVerificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailVerificationView.swift; sourceTree = "<group>"; };
+		186F89472CD38340008DFB42 /* EmailVerificationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailVerificationViewModel.swift; sourceTree = "<group>"; };
 		1873D5932CD0BB060041F016 /* FoodDelivery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodDelivery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1873D5962CD0BB060041F016 /* FoodDeliveryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDeliveryApp.swift; sourceTree = "<group>"; };
 		1873D59A2CD0BB0C0041F016 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -73,6 +81,10 @@
 		1873D5E62CD0F0E10041F016 /* Inter-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Medium.ttf"; sourceTree = "<group>"; };
 		1873D5E72CD0F0E10041F016 /* Inter-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Light.ttf"; sourceTree = "<group>"; };
 		1873D5EE2CD0F0E20041F016 /* Inter-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-ExtraLight.ttf"; sourceTree = "<group>"; };
+		1875FEE52CDA217B002685AB /* ResetPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordView.swift; sourceTree = "<group>"; };
+		1875FEE72CDA2457002685AB /* ResetPasswordViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewViewModel.swift; sourceTree = "<group>"; };
+		1875FEE92CDA28DA002685AB /* PasswordChangedBottomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordChangedBottomSheetView.swift; sourceTree = "<group>"; };
+		1875FEEB2CDA2B7C002685AB /* OTPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPView.swift; sourceTree = "<group>"; };
 		188946762CD208C7001B5585 /* CustomPager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPager.swift; sourceTree = "<group>"; };
 		1889467A2CD2296C001B5585 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
 		188946812CD22E2B001B5585 /* LoginAccountView .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginAccountView .swift"; sourceTree = "<group>"; };
@@ -102,6 +114,8 @@
 			isa = PBXGroup;
 			children = (
 				186F893C2CD34889008DFB42 /* ForgotPasswordViewModel.swift */,
+				186F89472CD38340008DFB42 /* EmailVerificationViewModel.swift */,
+				1875FEE72CDA2457002685AB /* ResetPasswordViewViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -111,6 +125,9 @@
 			children = (
 				186F893A2CD3464F008DFB42 /* ForgotPasswordView.swift */,
 				186F893E2CD34B59008DFB42 /* ForgotPasswordBottomSheetView.swift */,
+				186F89452CD382DE008DFB42 /* EmailVerificationView.swift */,
+				1875FEE52CDA217B002685AB /* ResetPasswordView.swift */,
+				1875FEE92CDA28DA002685AB /* PasswordChangedBottomSheetView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -378,6 +395,7 @@
 			isa = PBXGroup;
 			children = (
 				1889469A2CD2689F001B5585 /* CustomToggleButton.swift */,
+				1875FEEB2CDA2B7C002685AB /* OTPView.swift */,
 			);
 			path = "OtherItems ";
 			sourceTree = "<group>";
@@ -466,6 +484,7 @@
 				1889468B2CD24DB8001B5585 /* CustomTextField.swift in Sources */,
 				186F89422CD3599A008DFB42 /* ForgotPasswordModel.swift in Sources */,
 				1873D5AF2CD0BD200041F016 /* Image+Extension.swift in Sources */,
+				1875FEE62CDA217B002685AB /* ResetPasswordView.swift in Sources */,
 				188946942CD2625F001B5585 /* CreateAccountView .swift in Sources */,
 				186F893D2CD34889008DFB42 /* ForgotPasswordViewModel.swift in Sources */,
 				186F89442CD3634A008DFB42 /* NavigationButton.swift in Sources */,
@@ -476,10 +495,15 @@
 				1889468D2CD25498001B5585 /* PasswordTextField.swift in Sources */,
 				1873D5B52CD0D94F0041F016 /* OnboaringView.swift in Sources */,
 				1873D5C92CD0EA410041F016 /* FontConstants .swift in Sources */,
+				1875FEEA2CDA28DA002685AB /* PasswordChangedBottomSheetView.swift in Sources */,
 				188946772CD208C7001B5585 /* CustomPager.swift in Sources */,
+				186F89482CD38340008DFB42 /* EmailVerificationViewModel.swift in Sources */,
 				1889468F2CD26020001B5585 /* LoginAccountViewModel .swift in Sources */,
 				1889467B2CD2296C001B5585 /* OnboardingViewModel.swift in Sources */,
 				1873D5AB2CD0BCC80041F016 /* Color+Extension.swift in Sources */,
+				1875FEEC2CDA2B7C002685AB /* OTPView.swift in Sources */,
+				186F89462CD382DE008DFB42 /* EmailVerificationView.swift in Sources */,
+				1875FEE82CDA2457002685AB /* ResetPasswordViewViewModel.swift in Sources */,
 				188946872CD23FF8001B5585 /* CustomButton.swift in Sources */,
 				1873D5972CD0BB060041F016 /* FoodDeliveryApp.swift in Sources */,
 				1873D5CB2CD0EB790041F016 /* Font+Extension.swift in Sources */,

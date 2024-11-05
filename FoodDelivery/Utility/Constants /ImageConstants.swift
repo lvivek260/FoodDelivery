@@ -25,4 +25,5 @@ enum ImageConstants: String {
     case selectionIcon
     case emailIcon
     case whatsAppIcon
+    case passwordChangeSuccess
 }

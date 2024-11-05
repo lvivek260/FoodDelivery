@@ -28,7 +28,6 @@ struct CustomToggleButton: View {
                         .animation(.easeInOut(duration: 0.2), value: isOn)
                 }
             }
-                
         }
     }
 }

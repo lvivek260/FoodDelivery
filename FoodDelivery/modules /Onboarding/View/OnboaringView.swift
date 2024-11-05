@@ -26,7 +26,6 @@ struct OnboaringView: View {
                     .padding([.leading, .trailing, .bottom], 30)
             }
         }
-        
     }
     
     private var contentCardView: some View {
