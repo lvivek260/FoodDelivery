@@ -37,7 +37,7 @@
 		1875FEE62CDA217B002685AB /* ResetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1875FEE52CDA217B002685AB /* ResetPasswordView.swift */; };
 		1875FEE82CDA2457002685AB /* ResetPasswordViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1875FEE72CDA2457002685AB /* ResetPasswordViewViewModel.swift */; };
 		1875FEEA2CDA28DA002685AB /* PasswordChangedBottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1875FEE92CDA28DA002685AB /* PasswordChangedBottomSheetView.swift */; };
-		1875FEEC2CDA2B7C002685AB /* OTPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1875FEEB2CDA2B7C002685AB /* OTPView.swift */; };
+		1875FEEC2CDA2B7C002685AB /* OtpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1875FEEB2CDA2B7C002685AB /* OtpView.swift */; };
 		188946772CD208C7001B5585 /* CustomPager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188946762CD208C7001B5585 /* CustomPager.swift */; };
 		1889467B2CD2296C001B5585 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1889467A2CD2296C001B5585 /* OnboardingViewModel.swift */; };
 		188946822CD22E2B001B5585 /* LoginAccountView .swift in Sources */ = {isa = PBXBuildFile; fileRef = 188946812CD22E2B001B5585 /* LoginAccountView .swift */; };
@@ -84,7 +84,7 @@
 		1875FEE52CDA217B002685AB /* ResetPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordView.swift; sourceTree = "<group>"; };
 		1875FEE72CDA2457002685AB /* ResetPasswordViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewViewModel.swift; sourceTree = "<group>"; };
 		1875FEE92CDA28DA002685AB /* PasswordChangedBottomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordChangedBottomSheetView.swift; sourceTree = "<group>"; };
-		1875FEEB2CDA2B7C002685AB /* OTPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPView.swift; sourceTree = "<group>"; };
+		1875FEEB2CDA2B7C002685AB /* OtpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtpView.swift; sourceTree = "<group>"; };
 		188946762CD208C7001B5585 /* CustomPager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPager.swift; sourceTree = "<group>"; };
 		1889467A2CD2296C001B5585 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
 		188946812CD22E2B001B5585 /* LoginAccountView .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginAccountView .swift"; sourceTree = "<group>"; };
@@ -395,7 +395,7 @@
 			isa = PBXGroup;
 			children = (
 				1889469A2CD2689F001B5585 /* CustomToggleButton.swift */,
-				1875FEEB2CDA2B7C002685AB /* OTPView.swift */,
+				1875FEEB2CDA2B7C002685AB /* OtpView.swift */,
 			);
 			path = "OtherItems ";
 			sourceTree = "<group>";
@@ -501,7 +501,7 @@
 				1889468F2CD26020001B5585 /* LoginAccountViewModel .swift in Sources */,
 				1889467B2CD2296C001B5585 /* OnboardingViewModel.swift in Sources */,
 				1873D5AB2CD0BCC80041F016 /* Color+Extension.swift in Sources */,
-				1875FEEC2CDA2B7C002685AB /* OTPView.swift in Sources */,
+				1875FEEC2CDA2B7C002685AB /* OtpView.swift in Sources */,
 				186F89462CD382DE008DFB42 /* EmailVerificationView.swift in Sources */,
 				1875FEE82CDA2457002685AB /* ResetPasswordViewViewModel.swift in Sources */,
 				188946872CD23FF8001B5585 /* CustomButton.swift in Sources */,
