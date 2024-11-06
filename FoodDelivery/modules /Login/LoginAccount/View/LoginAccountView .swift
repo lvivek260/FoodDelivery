@@ -102,7 +102,7 @@ struct LoginAccountView: View {
     
     private var signInButton: some View {
         CustomButton(title: "Sign in") {
-           
+            UIApplication.shared.changeRootViewController(to: HomeView())
         }
     }
     

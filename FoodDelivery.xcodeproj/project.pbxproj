@@ -21,7 +21,7 @@
 		1873D5AD2CD0BCEB0041F016 /* ColorConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1873D5AC2CD0BCEB0041F016 /* ColorConstants.swift */; };
 		1873D5AF2CD0BD200041F016 /* Image+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1873D5AE2CD0BD200041F016 /* Image+Extension.swift */; };
 		1873D5B12CD0BD370041F016 /* ImageConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1873D5B02CD0BD370041F016 /* ImageConstants.swift */; };
-		1873D5B52CD0D94F0041F016 /* OnboaringView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1873D5B42CD0D94F0041F016 /* OnboaringView.swift */; };
+		1873D5B52CD0D94F0041F016 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1873D5B42CD0D94F0041F016 /* OnboardingView.swift */; };
 		1873D5BB2CD0DA920041F016 /* OnboardingAssets .xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1873D5BA2CD0DA920041F016 /* OnboardingAssets .xcassets */; };
 		1873D5C92CD0EA410041F016 /* FontConstants .swift in Sources */ = {isa = PBXBuildFile; fileRef = 1873D5C82CD0EA410041F016 /* FontConstants .swift */; };
 		1873D5CB2CD0EB790041F016 /* Font+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1873D5CA2CD0EB790041F016 /* Font+Extension.swift */; };
@@ -38,6 +38,14 @@
 		1875FEE82CDA2457002685AB /* ResetPasswordViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1875FEE72CDA2457002685AB /* ResetPasswordViewViewModel.swift */; };
 		1875FEEA2CDA28DA002685AB /* PasswordChangedBottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1875FEE92CDA28DA002685AB /* PasswordChangedBottomSheetView.swift */; };
 		1875FEEC2CDA2B7C002685AB /* OTPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1875FEEB2CDA2B7C002685AB /* OTPView.swift */; };
+		1875FEEF2CDA41CB002685AB /* MyTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1875FEEE2CDA41CB002685AB /* MyTabView.swift */; };
+		188045EE2CDB3C0000475DA6 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188045ED2CDB3C0000475DA6 /* HomeView.swift */; };
+		188045F12CDB3EF800475DA6 /* HomeAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 188045F02CDB3EF800475DA6 /* HomeAssets.xcassets */; };
+		188045F32CDB567800475DA6 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188045F22CDB567800475DA6 /* HomeViewModel.swift */; };
+		188045F52CDB697F00475DA6 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188045F42CDB697F00475DA6 /* Category.swift */; };
+		188045F72CDB698E00475DA6 /* CategoryContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188045F62CDB698E00475DA6 /* CategoryContent.swift */; };
+		188045F92CDB78CD00475DA6 /* FindCategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188045F82CDB78CD00475DA6 /* FindCategoryCell.swift */; };
+		188045FB2CDB790400475DA6 /* CategoryContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188045FA2CDB790400475DA6 /* CategoryContentCell.swift */; };
 		188946772CD208C7001B5585 /* CustomPager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188946762CD208C7001B5585 /* CustomPager.swift */; };
 		1889467B2CD2296C001B5585 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1889467A2CD2296C001B5585 /* OnboardingViewModel.swift */; };
 		188946822CD22E2B001B5585 /* LoginAccountView .swift in Sources */ = {isa = PBXBuildFile; fileRef = 188946812CD22E2B001B5585 /* LoginAccountView .swift */; };
@@ -68,7 +76,7 @@
 		1873D5AC2CD0BCEB0041F016 /* ColorConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorConstants.swift; sourceTree = "<group>"; };
 		1873D5AE2CD0BD200041F016 /* Image+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+Extension.swift"; sourceTree = "<group>"; };
 		1873D5B02CD0BD370041F016 /* ImageConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageConstants.swift; sourceTree = "<group>"; };
-		1873D5B42CD0D94F0041F016 /* OnboaringView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboaringView.swift; sourceTree = "<group>"; };
+		1873D5B42CD0D94F0041F016 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		1873D5BA2CD0DA920041F016 /* OnboardingAssets .xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "OnboardingAssets .xcassets"; sourceTree = "<group>"; };
 		1873D5C82CD0EA410041F016 /* FontConstants .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FontConstants .swift"; sourceTree = "<group>"; };
 		1873D5CA2CD0EB790041F016 /* Font+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Extension.swift"; sourceTree = "<group>"; };
@@ -85,6 +93,14 @@
 		1875FEE72CDA2457002685AB /* ResetPasswordViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewViewModel.swift; sourceTree = "<group>"; };
 		1875FEE92CDA28DA002685AB /* PasswordChangedBottomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordChangedBottomSheetView.swift; sourceTree = "<group>"; };
 		1875FEEB2CDA2B7C002685AB /* OTPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPView.swift; sourceTree = "<group>"; };
+		1875FEEE2CDA41CB002685AB /* MyTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabView.swift; sourceTree = "<group>"; };
+		188045ED2CDB3C0000475DA6 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		188045F02CDB3EF800475DA6 /* HomeAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = HomeAssets.xcassets; sourceTree = "<group>"; };
+		188045F22CDB567800475DA6 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		188045F42CDB697F00475DA6 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		188045F62CDB698E00475DA6 /* CategoryContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryContent.swift; sourceTree = "<group>"; };
+		188045F82CDB78CD00475DA6 /* FindCategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindCategoryCell.swift; sourceTree = "<group>"; };
+		188045FA2CDB790400475DA6 /* CategoryContentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryContentCell.swift; sourceTree = "<group>"; };
 		188946762CD208C7001B5585 /* CustomPager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPager.swift; sourceTree = "<group>"; };
 		1889467A2CD2296C001B5585 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
 		188946812CD22E2B001B5585 /* LoginAccountView .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginAccountView .swift"; sourceTree = "<group>"; };
@@ -229,6 +245,8 @@
 			children = (
 				1873D5B62CD0DA570041F016 /* Onboarding */,
 				1889467C2CD22DC1001B5585 /* Login */,
+				1875FEED2CDA41AB002685AB /* TabView  */,
+				188045E92CDB3B3100475DA6 /* Home */,
 			);
 			path = "modules ";
 			sourceTree = "<group>";
@@ -246,7 +264,7 @@
 		1873D5B72CD0DA620041F016 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				1873D5B42CD0D94F0041F016 /* OnboaringView.swift */,
+				1873D5B42CD0D94F0041F016 /* OnboardingView.swift */,
 				188946762CD208C7001B5585 /* CustomPager.swift */,
 			);
 			path = View;
@@ -284,6 +302,14 @@
 			path = "Fonts ";
 			sourceTree = "<group>";
 		};
+		1875FEED2CDA41AB002685AB /* TabView  */ = {
+			isa = PBXGroup;
+			children = (
+				1875FEEE2CDA41CB002685AB /* MyTabView.swift */,
+			);
+			path = "TabView ";
+			sourceTree = "<group>";
+		};
 		188021252CD342B2004A79B9 /* ForgotPassword */ = {
 			isa = PBXGroup;
 			children = (
@@ -292,6 +318,52 @@
 				186F89382CD34623008DFB42 /* ViewModel */,
 			);
 			path = ForgotPassword;
+			sourceTree = "<group>";
+		};
+		188045E92CDB3B3100475DA6 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				188045EF2CDB3ED200475DA6 /* Resources  */,
+				188045EA2CDB3BD900475DA6 /* Model */,
+				188045EB2CDB3BE100475DA6 /* View */,
+				188045EC2CDB3BE800475DA6 /* ViewModel */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		188045EA2CDB3BD900475DA6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				188045F42CDB697F00475DA6 /* Category.swift */,
+				188045F62CDB698E00475DA6 /* CategoryContent.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		188045EB2CDB3BE100475DA6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				188045ED2CDB3C0000475DA6 /* HomeView.swift */,
+				188045F82CDB78CD00475DA6 /* FindCategoryCell.swift */,
+				188045FA2CDB790400475DA6 /* CategoryContentCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		188045EC2CDB3BE800475DA6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				188045F22CDB567800475DA6 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		188045EF2CDB3ED200475DA6 /* Resources  */ = {
+			isa = PBXGroup;
+			children = (
+				188045F02CDB3EF800475DA6 /* HomeAssets.xcassets */,
+			);
+			path = "Resources ";
 			sourceTree = "<group>";
 		};
 		1889467C2CD22DC1001B5585 /* Login */ = {
@@ -467,6 +539,7 @@
 				1873D6092CD0F0E30041F016 /* Inter-Regular.ttf in Resources */,
 				188946842CD23C94001B5585 /* LoginAssets .xcassets in Resources */,
 				1873D5F32CD0F0E30041F016 /* Inter-ExtraBold.ttf in Resources */,
+				188045F12CDB3EF800475DA6 /* HomeAssets.xcassets in Resources */,
 				1873D5FF2CD0F0E30041F016 /* Inter-Bold.ttf in Resources */,
 				1873D59B2CD0BB0C0041F016 /* Assets.xcassets in Resources */,
 				1873D6032CD0F0E30041F016 /* Inter-Thin.ttf in Resources */,
@@ -482,18 +555,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				1889468B2CD24DB8001B5585 /* CustomTextField.swift in Sources */,
+				188045F32CDB567800475DA6 /* HomeViewModel.swift in Sources */,
 				186F89422CD3599A008DFB42 /* ForgotPasswordModel.swift in Sources */,
 				1873D5AF2CD0BD200041F016 /* Image+Extension.swift in Sources */,
 				1875FEE62CDA217B002685AB /* ResetPasswordView.swift in Sources */,
+				188045F72CDB698E00475DA6 /* CategoryContent.swift in Sources */,
 				188946942CD2625F001B5585 /* CreateAccountView .swift in Sources */,
 				186F893D2CD34889008DFB42 /* ForgotPasswordViewModel.swift in Sources */,
+				188045F92CDB78CD00475DA6 /* FindCategoryCell.swift in Sources */,
 				186F89442CD3634A008DFB42 /* NavigationButton.swift in Sources */,
 				188946892CD24198001B5585 /* UIApplication+Extension .swift in Sources */,
 				1873D5B12CD0BD370041F016 /* ImageConstants.swift in Sources */,
 				1889469B2CD2689F001B5585 /* CustomToggleButton.swift in Sources */,
+				188045F52CDB697F00475DA6 /* Category.swift in Sources */,
 				188946822CD22E2B001B5585 /* LoginAccountView .swift in Sources */,
+				1875FEEF2CDA41CB002685AB /* MyTabView.swift in Sources */,
+				188045FB2CDB790400475DA6 /* CategoryContentCell.swift in Sources */,
 				1889468D2CD25498001B5585 /* PasswordTextField.swift in Sources */,
-				1873D5B52CD0D94F0041F016 /* OnboaringView.swift in Sources */,
+				188045EE2CDB3C0000475DA6 /* HomeView.swift in Sources */,
+				1873D5B52CD0D94F0041F016 /* OnboardingView.swift in Sources */,
 				1873D5C92CD0EA410041F016 /* FontConstants .swift in Sources */,
 				1875FEEA2CDA28DA002685AB /* PasswordChangedBottomSheetView.swift in Sources */,
 				188946772CD208C7001B5585 /* CustomPager.swift in Sources */,

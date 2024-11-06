@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct OnboaringView: View {
+struct OnboardingView: View {
     
     @ObservedObject private var viewModel = OnboardingViewModel()
     
@@ -113,6 +113,6 @@ struct OnboaringView: View {
 
 struct SwiftUIView_Previews: PreviewProvider {
     static var previews: some View {
-        OnboaringView()
+        OnboardingView()
     }
 }

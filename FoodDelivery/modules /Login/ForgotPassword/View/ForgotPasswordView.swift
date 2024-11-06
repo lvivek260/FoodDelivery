@@ -46,9 +46,7 @@ struct ForgotPasswordView: View {
     }
     
     private var continueButton: some View {
-        CustomButton(title: "Continue") {
-            
-        }
+        NavigationButton(title: "Continue", destination: EmailVerificationView())
     }
 }
 

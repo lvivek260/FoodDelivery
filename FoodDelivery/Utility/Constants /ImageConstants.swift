@@ -26,4 +26,18 @@ enum ImageConstants: String {
     case emailIcon
     case whatsAppIcon
     case passwordChangeSuccess
+    
+    //Home View Images
+    case locationIcon
+    case notificationIcon
+    case searchIcon
+    case homeHeaderBg
+    case burgerIcon
+    case drinkIcon
+    case pizzaIcon
+    case tacoIcon
+    case burger1
+    case burger2
+    case burger3
+    case burger4
 }

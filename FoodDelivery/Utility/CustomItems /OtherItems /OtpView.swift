@@ -12,10 +12,11 @@ struct OTPView: View {
     @FocusState private var focusedField: Int?
 
     var body: some View {
-        HStack(spacing: 8) {
+        HStack(spacing: 12) {
             ForEach(0..<4, id: \.self) { index in
                 TextField("", text: $otpDigits[index])
-                    .frame(width: 50, height: 50)
+                    .font(.system(size: 32, weight: .regular))
+                    .frame(width: 75, height: 72)
                     .multilineTextAlignment(.center)
                     .keyboardType(.numberPad)
                     .focused($focusedField, equals: index)
