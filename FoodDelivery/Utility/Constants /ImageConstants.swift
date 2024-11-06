@@ -40,4 +40,5 @@ enum ImageConstants: String {
     case burger2
     case burger3
     case burger4
+    case burger
 }

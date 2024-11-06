@@ -104,7 +104,7 @@ struct HomeView: View {
     
 // MARK: - Find By Category Views
     private var findByCategoryView: some View {
-        VStack(spacing: 16){
+        VStack(spacing: 16) {
             findByCategoryTitleView
             categoryGridView
         }
