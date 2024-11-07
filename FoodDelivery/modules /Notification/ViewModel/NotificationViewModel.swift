@@ -21,5 +21,12 @@ final class NotificationViewModel: ObservableObject {
             .init(image: .notification1, title: "Special Offer! 60% Off", subTitle: "Special offer for new account, valid until 20 Nov 2022"),
             .init(image: .notification6, title: "Credit Card Connected", subTitle: "Special promotion only valid today"),
         ]),
+        
+            .init(dayTitle: "Others", notifications: [
+                .init(image: .notification4, title: "30% Special Discount!", subTitle: "Special promotion only valid today"),
+                .init(image: .notification5, title: "Account Setup Successfull!", subTitle: "Special promotion only valid today"),
+                .init(image: .notification1, title: "Special Offer! 60% Off", subTitle: "Special offer for new account, valid until 20 Nov 2022"),
+                .init(image: .notification6, title: "Credit Card Connected", subTitle: "Special promotion only valid today"),
+            ]),
     ]
 }
