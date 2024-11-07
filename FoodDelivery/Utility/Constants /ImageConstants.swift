@@ -44,4 +44,7 @@ enum ImageConstants: String {
     case starFill
     case clock
     case dollar
+    case shopIcon
+    case minusIcon
+    case plusIcon
 }

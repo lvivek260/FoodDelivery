@@ -9,22 +9,30 @@ import SwiftUI
 
 struct ProductDetailView: View {
     @ObservedObject private var viewModel = HomeViewModel()
+    @State var totalIntake: Int = 1
     
     var body: some View {
-        ScrollView {
-            VStack(spacing: 16) {
-                imageView
-                titlePriceView
-                timeRatingDetailView
-                Divider()
-                descriptionView
-                VStack(spacing: 8) {
-                    recomendedForYouTitleView
-                    recomendedForYouGridView
+        ZStack {
+            ScrollView {
+                VStack(spacing: 16) {
+                    imageView
+                    titlePriceView
+                    timeRatingDetailView
+                    Divider()
+                    descriptionView
+                    VStack(spacing: 8) {
+                        recomendedForYouTitleView
+                        recomendedForYouGridView
+                        Rectangle()
+                            .foregroundColor(.clear)
+                            .frame(height: 80)
+                    }
                 }
+                .padding(.horizontal, 16)
+                .padding(.top, 8)
             }
-            .padding(.horizontal, 16)
-            .padding(.top, 8)
+            
+            bottomAddToCartView
         }
         .navigationTitle("About This Menu")
     }
@@ -97,6 +105,65 @@ struct ProductDetailView: View {
             }
         }
         .padding(.horizontal, 8)
+    }
+    
+    private var bottomAddToCartView: some View {
+        VStack {
+            Spacer()
+            ZStack {
+                Rectangle()
+                    .fill(.white)
+              
+                HStack {
+                    addCartValueChangeView
+                    Spacer().frame(width: 30)
+                    addCartButton
+                       
+                }
+                .padding(24)
+            }
+            .frame(height: 100)
+        }
+        .ignoresSafeArea()
+    }
+    
+    private var addCartValueChangeView: some View {
+        HStack(spacing: 12) {
+            Button(action: {
+                totalIntake -= 1
+            }) {
+                Image(.minusIcon)
+                    .resizable()
+                    .frame(width: 40, height: 40)
+            }
+            Text(totalIntake.description)
+                .font(.system(size: 16, weight: .bold))
+            Button(action: {
+                totalIntake += 1
+            }) {
+                Image(.plusIcon)
+                    .resizable()
+                    .frame(width: 40, height: 40)
+            }
+        }
+    }
+    
+    private var addCartButton: some View {
+        Button(action: {}) {
+            HStack(spacing: 8) {
+                Image(.shopIcon)
+                    .resizable()
+                    .frame(width: 20, height: 20)
+                Text("Add To Cart")
+                    .font(.system(size: 14, weight: .semibold))
+            }
+            .frame(maxWidth: .infinity)
+            .padding(.vertical, 16)
+            .foregroundStyle(.white)
+            .background(Color(.primaryHover))
+            .cornerRadius(.infinity)
+        }
+        
     }
 }
 

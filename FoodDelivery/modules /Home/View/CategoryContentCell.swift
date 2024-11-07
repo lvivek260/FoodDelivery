@@ -84,6 +84,7 @@ struct CategoryContentCell: View {
                 .frame(width: 16, height: 16)
                 .foregroundColor(Color(.primaryHover))
             Text(content.rating)
+                .foregroundColor(.black)
                 .font(.system(size: 12, weight: .medium))
         }
     }
@@ -95,6 +96,7 @@ struct CategoryContentCell: View {
                 .frame(width: 16, height: 16)
                 .foregroundColor(Color(.primaryHover))
             Text(content.location)
+                .foregroundColor(.black)
                 .font(.system(size: 12, weight: .medium))
         }
     }

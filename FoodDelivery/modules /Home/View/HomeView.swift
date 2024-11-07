@@ -152,7 +152,9 @@ struct HomeView: View {
     private var contentGridView: some View {
         LazyVGrid(columns: [GridItem(.flexible(), spacing: 22), GridItem(.flexible())], spacing: 16) {
             ForEach(viewModel.categoryContent, id: \.self) { content in
-                CategoryContentCell(content: content)
+                NavigationLink(destination: ProductDetailView()) {
+                    CategoryContentCell(content: content)
+                }
             }
         }
         .padding(.horizontal, 24)
