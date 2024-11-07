@@ -63,4 +63,12 @@ enum ImageConstants: String {
     case chat1
     case chat2
     case chat3
+    
+    //Notificatiton Icons
+    case notification1
+    case notification2
+    case notification3
+    case notification4
+    case notification5
+    case notification6
 }

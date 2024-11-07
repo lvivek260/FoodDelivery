@@ -45,6 +45,12 @@
 		18792FDD2CDCCC7A00893809 /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18792FDC2CDCCC7A00893809 /* ChatViewModel.swift */; };
 		18792FE02CDCD13C00893809 /* ChatAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18792FDF2CDCD13C00893809 /* ChatAssets.xcassets */; };
 		18792FE42CDCE23800893809 /* TabViewAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18792FE32CDCE23800893809 /* TabViewAssets.xcassets */; };
+		18792FE62CDCEB5100893809 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18792FE52CDCEB5100893809 /* NotificationView.swift */; };
+		18792FE82CDCEFE900893809 /* NotificationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18792FE72CDCEFE900893809 /* NotificationModel.swift */; };
+		18792FEA2CDCF0FD00893809 /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18792FE92CDCF0FD00893809 /* NotificationCell.swift */; };
+		18792FEC2CDCF52000893809 /* NotificationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18792FEB2CDCF52000893809 /* NotificationViewModel.swift */; };
+		18792FF22CDCF8B300893809 /* NotificationTitleWithGridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18792FF12CDCF8B300893809 /* NotificationTitleWithGridCell.swift */; };
+		18792FF52CDCF94000893809 /* NotificationAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18792FF42CDCF94000893809 /* NotificationAssets.xcassets */; };
 		188045EE2CDB3C0000475DA6 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188045ED2CDB3C0000475DA6 /* HomeView.swift */; };
 		188045F12CDB3EF800475DA6 /* HomeAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 188045F02CDB3EF800475DA6 /* HomeAssets.xcassets */; };
 		188045F32CDB567800475DA6 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188045F22CDB567800475DA6 /* HomeViewModel.swift */; };
@@ -110,6 +116,12 @@
 		18792FDC2CDCCC7A00893809 /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
 		18792FDF2CDCD13C00893809 /* ChatAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ChatAssets.xcassets; sourceTree = "<group>"; };
 		18792FE32CDCE23800893809 /* TabViewAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = TabViewAssets.xcassets; sourceTree = "<group>"; };
+		18792FE52CDCEB5100893809 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		18792FE72CDCEFE900893809 /* NotificationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationModel.swift; sourceTree = "<group>"; };
+		18792FE92CDCF0FD00893809 /* NotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
+		18792FEB2CDCF52000893809 /* NotificationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewModel.swift; sourceTree = "<group>"; };
+		18792FF12CDCF8B300893809 /* NotificationTitleWithGridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTitleWithGridCell.swift; sourceTree = "<group>"; };
+		18792FF42CDCF94000893809 /* NotificationAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = NotificationAssets.xcassets; sourceTree = "<group>"; };
 		188045ED2CDB3C0000475DA6 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		188045F02CDB3EF800475DA6 /* HomeAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = HomeAssets.xcassets; sourceTree = "<group>"; };
 		188045F22CDB567800475DA6 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
@@ -268,6 +280,7 @@
 				1875FEED2CDA41AB002685AB /* TabView  */,
 				188045E92CDB3B3100475DA6 /* Home */,
 				18792FD22CDCC2B100893809 /* Chat */,
+				18792FED2CDCF7F700893809 /* Notification */,
 			);
 			path = "modules ";
 			sourceTree = "<group>";
@@ -388,6 +401,51 @@
 			isa = PBXGroup;
 			children = (
 				18792FE32CDCE23800893809 /* TabViewAssets.xcassets */,
+			);
+			path = "Resources ";
+			sourceTree = "<group>";
+		};
+		18792FED2CDCF7F700893809 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				18792FF32CDCF92B00893809 /* Resources  */,
+				18792FF02CDCF81C00893809 /* Model */,
+				18792FEE2CDCF80C00893809 /* View */,
+				18792FEF2CDCF81200893809 /* ViewModel */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
+		18792FEE2CDCF80C00893809 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				18792FE52CDCEB5100893809 /* NotificationView.swift */,
+				18792FF12CDCF8B300893809 /* NotificationTitleWithGridCell.swift */,
+				18792FE92CDCF0FD00893809 /* NotificationCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		18792FEF2CDCF81200893809 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				18792FEB2CDCF52000893809 /* NotificationViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		18792FF02CDCF81C00893809 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				18792FE72CDCEFE900893809 /* NotificationModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		18792FF32CDCF92B00893809 /* Resources  */ = {
+			isa = PBXGroup;
+			children = (
+				18792FF42CDCF94000893809 /* NotificationAssets.xcassets */,
 			);
 			path = "Resources ";
 			sourceTree = "<group>";
@@ -647,6 +705,7 @@
 				1873D5FF2CD0F0E30041F016 /* Inter-Bold.ttf in Resources */,
 				1873D59B2CD0BB0C0041F016 /* Assets.xcassets in Resources */,
 				1873D6032CD0F0E30041F016 /* Inter-Thin.ttf in Resources */,
+				18792FF52CDCF94000893809 /* NotificationAssets.xcassets in Resources */,
 				1873D6122CD0F0E30041F016 /* Inter-ExtraLight.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -667,7 +726,9 @@
 				188045F72CDB698E00475DA6 /* CategoryContent.swift in Sources */,
 				188946942CD2625F001B5585 /* CreateAccountView .swift in Sources */,
 				186F893D2CD34889008DFB42 /* ForgotPasswordViewModel.swift in Sources */,
+				18792FF22CDCF8B300893809 /* NotificationTitleWithGridCell.swift in Sources */,
 				188045F92CDB78CD00475DA6 /* FindCategoryCell.swift in Sources */,
+				18792FEC2CDCF52000893809 /* NotificationViewModel.swift in Sources */,
 				18792FD52CDCC2D800893809 /* ChatListView.swift in Sources */,
 				186F89442CD3634A008DFB42 /* NavigationButton.swift in Sources */,
 				188946892CD24198001B5585 /* UIApplication+Extension .swift in Sources */,
@@ -682,9 +743,11 @@
 				1889468D2CD25498001B5585 /* PasswordTextField.swift in Sources */,
 				188045EE2CDB3C0000475DA6 /* HomeView.swift in Sources */,
 				1873D5B52CD0D94F0041F016 /* OnboardingView.swift in Sources */,
+				18792FE82CDCEFE900893809 /* NotificationModel.swift in Sources */,
 				1873D5C92CD0EA410041F016 /* FontConstants .swift in Sources */,
 				1875FEEA2CDA28DA002685AB /* PasswordChangedBottomSheetView.swift in Sources */,
 				188946772CD208C7001B5585 /* CustomPager.swift in Sources */,
+				18792FE62CDCEB5100893809 /* NotificationView.swift in Sources */,
 				186F89482CD38340008DFB42 /* EmailVerificationViewModel.swift in Sources */,
 				1889468F2CD26020001B5585 /* LoginAccountViewModel .swift in Sources */,
 				1889467B2CD2296C001B5585 /* OnboardingViewModel.swift in Sources */,
@@ -696,6 +759,7 @@
 				18792FDA2CDCCC5D00893809 /* ChatModel.swift in Sources */,
 				1873D5972CD0BB060041F016 /* FoodDeliveryApp.swift in Sources */,
 				1873D5CB2CD0EB790041F016 /* Font+Extension.swift in Sources */,
+				18792FEA2CDCF0FD00893809 /* NotificationCell.swift in Sources */,
 				188946962CD262E1001B5585 /* CreateAccountViewModel.swift in Sources */,
 				18DA960C2CDC906D00E95748 /* BlurView.swift in Sources */,
 				18DA96142CDCA09900E95748 /* PaymentView.swift in Sources */,

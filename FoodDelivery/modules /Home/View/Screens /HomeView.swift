@@ -84,7 +84,7 @@ struct HomeView: View {
     }
     
     private var notificationButton: some View {
-        NavigationLink(destination: OnboardingView()) {
+        NavigationLink(destination: NotificationView()) {
             Image(.notificationIcon)
                 .resizable()
                 .frame(width: 40, height: 40)
