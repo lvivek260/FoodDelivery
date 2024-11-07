@@ -171,7 +171,7 @@ struct ProductDetailView: View {
     }
     
     private var addCartButton: some View {
-        Button(action: {}) {
+        NavigationLink(destination: PaymentView()) {
             HStack(spacing: 8) {
                 Image(.shopIcon)
                     .resizable()
@@ -185,7 +185,6 @@ struct ProductDetailView: View {
             .background(Color(.primaryHover))
             .cornerRadius(.infinity)
         }
-        
     }
 }
 

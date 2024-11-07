@@ -39,6 +39,11 @@
 		1875FEEA2CDA28DA002685AB /* PasswordChangedBottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1875FEE92CDA28DA002685AB /* PasswordChangedBottomSheetView.swift */; };
 		1875FEEC2CDA2B7C002685AB /* OTPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1875FEEB2CDA2B7C002685AB /* OTPView.swift */; };
 		1875FEEF2CDA41CB002685AB /* MyTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1875FEEE2CDA41CB002685AB /* MyTabView.swift */; };
+		18792FD52CDCC2D800893809 /* ChatListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18792FD42CDCC2D800893809 /* ChatListView.swift */; };
+		18792FD72CDCCB7500893809 /* ChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18792FD62CDCCB7500893809 /* ChatCell.swift */; };
+		18792FDA2CDCCC5D00893809 /* ChatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18792FD92CDCCC5D00893809 /* ChatModel.swift */; };
+		18792FDD2CDCCC7A00893809 /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18792FDC2CDCCC7A00893809 /* ChatViewModel.swift */; };
+		18792FE02CDCD13C00893809 /* ChatAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18792FDF2CDCD13C00893809 /* ChatAssets.xcassets */; };
 		188045EE2CDB3C0000475DA6 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188045ED2CDB3C0000475DA6 /* HomeView.swift */; };
 		188045F12CDB3EF800475DA6 /* HomeAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 188045F02CDB3EF800475DA6 /* HomeAssets.xcassets */; };
 		188045F32CDB567800475DA6 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188045F22CDB567800475DA6 /* HomeViewModel.swift */; };
@@ -61,6 +66,7 @@
 		1889469B2CD2689F001B5585 /* CustomToggleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1889469A2CD2689F001B5585 /* CustomToggleButton.swift */; };
 		18DA960C2CDC906D00E95748 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DA960B2CDC906D00E95748 /* BlurView.swift */; };
 		18DA96102CDC942000E95748 /* CustomBackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DA960F2CDC942000E95748 /* CustomBackButton.swift */; };
+		18DA96142CDCA09900E95748 /* PaymentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DA96132CDCA09900E95748 /* PaymentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -97,6 +103,11 @@
 		1875FEE92CDA28DA002685AB /* PasswordChangedBottomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordChangedBottomSheetView.swift; sourceTree = "<group>"; };
 		1875FEEB2CDA2B7C002685AB /* OTPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPView.swift; sourceTree = "<group>"; };
 		1875FEEE2CDA41CB002685AB /* MyTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabView.swift; sourceTree = "<group>"; };
+		18792FD42CDCC2D800893809 /* ChatListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListView.swift; sourceTree = "<group>"; };
+		18792FD62CDCCB7500893809 /* ChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCell.swift; sourceTree = "<group>"; };
+		18792FD92CDCCC5D00893809 /* ChatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatModel.swift; sourceTree = "<group>"; };
+		18792FDC2CDCCC7A00893809 /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
+		18792FDF2CDCD13C00893809 /* ChatAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ChatAssets.xcassets; sourceTree = "<group>"; };
 		188045ED2CDB3C0000475DA6 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		188045F02CDB3EF800475DA6 /* HomeAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = HomeAssets.xcassets; sourceTree = "<group>"; };
 		188045F22CDB567800475DA6 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
@@ -119,6 +130,7 @@
 		1889469A2CD2689F001B5585 /* CustomToggleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomToggleButton.swift; sourceTree = "<group>"; };
 		18DA960B2CDC906D00E95748 /* BlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BlurView.swift; path = ../../../../../../../../../Documents/BlurView.swift; sourceTree = "<group>"; };
 		18DA960F2CDC942000E95748 /* CustomBackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBackButton.swift; sourceTree = "<group>"; };
+		18DA96132CDCA09900E95748 /* PaymentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -253,6 +265,7 @@
 				1889467C2CD22DC1001B5585 /* Login */,
 				1875FEED2CDA41AB002685AB /* TabView  */,
 				188045E92CDB3B3100475DA6 /* Home */,
+				18792FD22CDCC2B100893809 /* Chat */,
 			);
 			path = "modules ";
 			sourceTree = "<group>";
@@ -316,6 +329,50 @@
 			path = "TabView ";
 			sourceTree = "<group>";
 		};
+		18792FD22CDCC2B100893809 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				18792FDE2CDCD11D00893809 /* Resources */,
+				18792FD82CDCCC4200893809 /* Model */,
+				18792FD32CDCC2C900893809 /* View */,
+				18792FDB2CDCCC6600893809 /* ViewModel */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		18792FD32CDCC2C900893809 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				18792FD42CDCC2D800893809 /* ChatListView.swift */,
+				18792FD62CDCCB7500893809 /* ChatCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		18792FD82CDCCC4200893809 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				18792FD92CDCCC5D00893809 /* ChatModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		18792FDB2CDCCC6600893809 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				18792FDC2CDCCC7A00893809 /* ChatViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		18792FDE2CDCD11D00893809 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				18792FDF2CDCD13C00893809 /* ChatAssets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		188021252CD342B2004A79B9 /* ForgotPassword */ = {
 			isa = PBXGroup;
 			children = (
@@ -349,10 +406,8 @@
 		188045EB2CDB3BE100475DA6 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				188045ED2CDB3C0000475DA6 /* HomeView.swift */,
-				188045F82CDB78CD00475DA6 /* FindCategoryCell.swift */,
-				188045FA2CDB790400475DA6 /* CategoryContentCell.swift */,
-				188045FC2CDB8BB300475DA6 /* ProductDetailView.swift */,
+				18DA96122CDC9D6900E95748 /* Screens  */,
+				18DA96112CDC9D5800E95748 /* Cells  */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -481,6 +536,25 @@
 			path = "OtherItems ";
 			sourceTree = "<group>";
 		};
+		18DA96112CDC9D5800E95748 /* Cells  */ = {
+			isa = PBXGroup;
+			children = (
+				188045F82CDB78CD00475DA6 /* FindCategoryCell.swift */,
+				188045FA2CDB790400475DA6 /* CategoryContentCell.swift */,
+			);
+			path = "Cells ";
+			sourceTree = "<group>";
+		};
+		18DA96122CDC9D6900E95748 /* Screens  */ = {
+			isa = PBXGroup;
+			children = (
+				188045ED2CDB3C0000475DA6 /* HomeView.swift */,
+				188045FC2CDB8BB300475DA6 /* ProductDetailView.swift */,
+				18DA96132CDCA09900E95748 /* PaymentView.swift */,
+			);
+			path = "Screens ";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -543,6 +617,7 @@
 				1873D60B2CD0F0E30041F016 /* Inter-Light.ttf in Resources */,
 				1873D5FD2CD0F0E30041F016 /* Inter-Black.ttf in Resources */,
 				1873D6012CD0F0E30041F016 /* Inter-SemiBold.ttf in Resources */,
+				18792FE02CDCD13C00893809 /* ChatAssets.xcassets in Resources */,
 				1873D60A2CD0F0E30041F016 /* Inter-Medium.ttf in Resources */,
 				1873D5BB2CD0DA920041F016 /* OnboardingAssets .xcassets in Resources */,
 				1873D6092CD0F0E30041F016 /* Inter-Regular.ttf in Resources */,
@@ -573,6 +648,7 @@
 				188946942CD2625F001B5585 /* CreateAccountView .swift in Sources */,
 				186F893D2CD34889008DFB42 /* ForgotPasswordViewModel.swift in Sources */,
 				188045F92CDB78CD00475DA6 /* FindCategoryCell.swift in Sources */,
+				18792FD52CDCC2D800893809 /* ChatListView.swift in Sources */,
 				186F89442CD3634A008DFB42 /* NavigationButton.swift in Sources */,
 				188946892CD24198001B5585 /* UIApplication+Extension .swift in Sources */,
 				1873D5B12CD0BD370041F016 /* ImageConstants.swift in Sources */,
@@ -580,6 +656,7 @@
 				188045F52CDB697F00475DA6 /* Category.swift in Sources */,
 				188946822CD22E2B001B5585 /* LoginAccountView .swift in Sources */,
 				1875FEEF2CDA41CB002685AB /* MyTabView.swift in Sources */,
+				18792FD72CDCCB7500893809 /* ChatCell.swift in Sources */,
 				18DA96102CDC942000E95748 /* CustomBackButton.swift in Sources */,
 				188045FB2CDB790400475DA6 /* CategoryContentCell.swift in Sources */,
 				1889468D2CD25498001B5585 /* PasswordTextField.swift in Sources */,
@@ -596,12 +673,15 @@
 				186F89462CD382DE008DFB42 /* EmailVerificationView.swift in Sources */,
 				1875FEE82CDA2457002685AB /* ResetPasswordViewViewModel.swift in Sources */,
 				188946872CD23FF8001B5585 /* CustomButton.swift in Sources */,
+				18792FDA2CDCCC5D00893809 /* ChatModel.swift in Sources */,
 				1873D5972CD0BB060041F016 /* FoodDeliveryApp.swift in Sources */,
 				1873D5CB2CD0EB790041F016 /* Font+Extension.swift in Sources */,
 				188946962CD262E1001B5585 /* CreateAccountViewModel.swift in Sources */,
 				18DA960C2CDC906D00E95748 /* BlurView.swift in Sources */,
+				18DA96142CDCA09900E95748 /* PaymentView.swift in Sources */,
 				186F893B2CD3464F008DFB42 /* ForgotPasswordView.swift in Sources */,
 				186F893F2CD34B59008DFB42 /* ForgotPasswordBottomSheetView.swift in Sources */,
+				18792FDD2CDCCC7A00893809 /* ChatViewModel.swift in Sources */,
 				1873D5AD2CD0BCEB0041F016 /* ColorConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

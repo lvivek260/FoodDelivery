@@ -52,4 +52,10 @@ enum ImageConstants: String {
     case minusIcon
     case plusIcon
     case shareIcon
+    
+    //Chat View Images
+    case readIcon
+    case chat1
+    case chat2
+    case chat3
 }
