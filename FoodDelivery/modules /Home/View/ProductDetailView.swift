@@ -31,10 +31,29 @@ struct ProductDetailView: View {
                 .padding(.horizontal, 16)
                 .padding(.top, 8)
             }
+            .background(Color(.neutral20))
             
             bottomAddToCartView
         }
         .navigationTitle("About This Menu")
+        .navigationBarBackButtonHidden(true)
+        .toolbar {
+            ToolbarItem(placement: .navigationBarLeading) {
+                 CustomBackButton() 
+            }
+            
+            ToolbarItem(placement: .navigationBarTrailing) {
+                shareToolBarButton
+            }
+        }
+    }
+    
+    private var shareToolBarButton: some View {
+        Button(action: {}) {
+            Image(.shareIcon)
+                .resizable()
+                .frame(width: 32, height: 32)
+        }
     }
     
     private var imageView: some View {
@@ -112,7 +131,10 @@ struct ProductDetailView: View {
             Spacer()
             ZStack {
                 Rectangle()
-                    .fill(.white)
+                    .fill(Color.white.opacity(0.3))
+                    .background(
+                        BlurView(style: .regular)
+                    )
               
                 HStack {
                     addCartValueChangeView

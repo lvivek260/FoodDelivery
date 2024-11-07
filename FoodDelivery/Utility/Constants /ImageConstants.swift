@@ -8,6 +8,10 @@
 import Foundation
 
 enum ImageConstants: String {
+    //Global Images
+    case backButtonIcon
+
+    
     //Onboarding Images
     case firstOnboardingBg
     case secondOnboardingBg
@@ -47,4 +51,5 @@ enum ImageConstants: String {
     case shopIcon
     case minusIcon
     case plusIcon
+    case shareIcon
 }

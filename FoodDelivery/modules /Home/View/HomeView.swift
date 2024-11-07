@@ -19,7 +19,6 @@ struct HomeView: View {
                     
                     VStack(spacing: 16) {
                         findByCategoryView
-                        
                         contentGridView
                     }
                     
