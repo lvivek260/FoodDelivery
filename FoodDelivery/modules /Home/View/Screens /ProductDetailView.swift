@@ -35,6 +35,7 @@ struct ProductDetailView: View {
             
             bottomAddToCartView
         }
+        .toolbar(.hidden, for: .tabBar)
         .navigationTitle("About This Menu")
         .navigationBarBackButtonHidden(true)
         .toolbar {

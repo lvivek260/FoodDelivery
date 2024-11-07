@@ -11,6 +11,11 @@ enum ImageConstants: String {
     //Global Images
     case backButtonIcon
 
+    //Tab View Images
+    case homeTabIcon
+    case messageTabIcon
+    case personTabIcon
+    case shopTabIcon
     
     //Onboarding Images
     case firstOnboardingBg

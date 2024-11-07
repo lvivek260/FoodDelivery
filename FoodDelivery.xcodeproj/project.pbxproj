@@ -38,12 +38,13 @@
 		1875FEE82CDA2457002685AB /* ResetPasswordViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1875FEE72CDA2457002685AB /* ResetPasswordViewViewModel.swift */; };
 		1875FEEA2CDA28DA002685AB /* PasswordChangedBottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1875FEE92CDA28DA002685AB /* PasswordChangedBottomSheetView.swift */; };
 		1875FEEC2CDA2B7C002685AB /* OTPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1875FEEB2CDA2B7C002685AB /* OTPView.swift */; };
-		1875FEEF2CDA41CB002685AB /* MyTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1875FEEE2CDA41CB002685AB /* MyTabView.swift */; };
+		1875FEEF2CDA41CB002685AB /* MyTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1875FEEE2CDA41CB002685AB /* MyTabBarView.swift */; };
 		18792FD52CDCC2D800893809 /* ChatListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18792FD42CDCC2D800893809 /* ChatListView.swift */; };
 		18792FD72CDCCB7500893809 /* ChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18792FD62CDCCB7500893809 /* ChatCell.swift */; };
 		18792FDA2CDCCC5D00893809 /* ChatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18792FD92CDCCC5D00893809 /* ChatModel.swift */; };
 		18792FDD2CDCCC7A00893809 /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18792FDC2CDCCC7A00893809 /* ChatViewModel.swift */; };
 		18792FE02CDCD13C00893809 /* ChatAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18792FDF2CDCD13C00893809 /* ChatAssets.xcassets */; };
+		18792FE42CDCE23800893809 /* TabViewAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18792FE32CDCE23800893809 /* TabViewAssets.xcassets */; };
 		188045EE2CDB3C0000475DA6 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188045ED2CDB3C0000475DA6 /* HomeView.swift */; };
 		188045F12CDB3EF800475DA6 /* HomeAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 188045F02CDB3EF800475DA6 /* HomeAssets.xcassets */; };
 		188045F32CDB567800475DA6 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188045F22CDB567800475DA6 /* HomeViewModel.swift */; };
@@ -102,12 +103,13 @@
 		1875FEE72CDA2457002685AB /* ResetPasswordViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewViewModel.swift; sourceTree = "<group>"; };
 		1875FEE92CDA28DA002685AB /* PasswordChangedBottomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordChangedBottomSheetView.swift; sourceTree = "<group>"; };
 		1875FEEB2CDA2B7C002685AB /* OTPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPView.swift; sourceTree = "<group>"; };
-		1875FEEE2CDA41CB002685AB /* MyTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabView.swift; sourceTree = "<group>"; };
+		1875FEEE2CDA41CB002685AB /* MyTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabBarView.swift; sourceTree = "<group>"; };
 		18792FD42CDCC2D800893809 /* ChatListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListView.swift; sourceTree = "<group>"; };
 		18792FD62CDCCB7500893809 /* ChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCell.swift; sourceTree = "<group>"; };
 		18792FD92CDCCC5D00893809 /* ChatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatModel.swift; sourceTree = "<group>"; };
 		18792FDC2CDCCC7A00893809 /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
 		18792FDF2CDCD13C00893809 /* ChatAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ChatAssets.xcassets; sourceTree = "<group>"; };
+		18792FE32CDCE23800893809 /* TabViewAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = TabViewAssets.xcassets; sourceTree = "<group>"; };
 		188045ED2CDB3C0000475DA6 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		188045F02CDB3EF800475DA6 /* HomeAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = HomeAssets.xcassets; sourceTree = "<group>"; };
 		188045F22CDB567800475DA6 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
@@ -324,7 +326,8 @@
 		1875FEED2CDA41AB002685AB /* TabView  */ = {
 			isa = PBXGroup;
 			children = (
-				1875FEEE2CDA41CB002685AB /* MyTabView.swift */,
+				18792FE22CDCE22300893809 /* Resources  */,
+				18792FE12CDCE21A00893809 /* View */,
 			);
 			path = "TabView ";
 			sourceTree = "<group>";
@@ -371,6 +374,22 @@
 				18792FDF2CDCD13C00893809 /* ChatAssets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		18792FE12CDCE21A00893809 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1875FEEE2CDA41CB002685AB /* MyTabBarView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		18792FE22CDCE22300893809 /* Resources  */ = {
+			isa = PBXGroup;
+			children = (
+				18792FE32CDCE23800893809 /* TabViewAssets.xcassets */,
+			);
+			path = "Resources ";
 			sourceTree = "<group>";
 		};
 		188021252CD342B2004A79B9 /* ForgotPassword */ = {
@@ -620,6 +639,7 @@
 				18792FE02CDCD13C00893809 /* ChatAssets.xcassets in Resources */,
 				1873D60A2CD0F0E30041F016 /* Inter-Medium.ttf in Resources */,
 				1873D5BB2CD0DA920041F016 /* OnboardingAssets .xcassets in Resources */,
+				18792FE42CDCE23800893809 /* TabViewAssets.xcassets in Resources */,
 				1873D6092CD0F0E30041F016 /* Inter-Regular.ttf in Resources */,
 				188946842CD23C94001B5585 /* LoginAssets .xcassets in Resources */,
 				1873D5F32CD0F0E30041F016 /* Inter-ExtraBold.ttf in Resources */,
@@ -655,7 +675,7 @@
 				1889469B2CD2689F001B5585 /* CustomToggleButton.swift in Sources */,
 				188045F52CDB697F00475DA6 /* Category.swift in Sources */,
 				188946822CD22E2B001B5585 /* LoginAccountView .swift in Sources */,
-				1875FEEF2CDA41CB002685AB /* MyTabView.swift in Sources */,
+				1875FEEF2CDA41CB002685AB /* MyTabBarView.swift in Sources */,
 				18792FD72CDCCB7500893809 /* ChatCell.swift in Sources */,
 				18DA96102CDC942000E95748 /* CustomBackButton.swift in Sources */,
 				188045FB2CDB790400475DA6 /* CategoryContentCell.swift in Sources */,

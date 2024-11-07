@@ -27,6 +27,7 @@ struct PaymentView: View {
             .padding(.horizontal, 24)
             .padding(.top, 16)
         }
+        .toolbar(.hidden, for: .tabBar)
         .navigationTitle("Payment")
         .navigationBarBackButtonHidden()
         .toolbar {
