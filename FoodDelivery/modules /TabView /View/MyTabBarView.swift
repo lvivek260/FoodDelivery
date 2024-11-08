@@ -9,23 +9,21 @@ import SwiftUI
 
 struct MyTabBarView: View {
     
+    private let viewModel = TabViewModel()
+    
     var body: some View {
         TabView {
-            HomeView()
+            ForEach(viewModel.tabBarData) { data in
+                NavigationStack {
+                    data.view
+                }
                 .tabItem {
                     VStack {
-                        Image(.homeTabIcon)
-                        Text("Home")
+                        Image(data.image)
+                        Text(data.text)
                     }
                 }
-                
-            ChatListView()
-                .tabItem {
-                    VStack {
-                        Image(.messageTabIcon)
-                        Text("Chat")
-                    }
-                }
+            }
         }
         .tint(Color(.primaryHover))
     }

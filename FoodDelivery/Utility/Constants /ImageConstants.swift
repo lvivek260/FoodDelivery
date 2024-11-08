@@ -71,4 +71,13 @@ enum ImageConstants: String {
     case notification4
     case notification5
     case notification6
+    
+    //Profile View images
+    case signOut
+    case profile1
+    case profile2
+    case profile3
+    case profile4
+    case profile5
+    case profile6
 }

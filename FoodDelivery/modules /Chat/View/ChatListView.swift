@@ -12,18 +12,16 @@ struct ChatListView: View {
     @ObservedObject private var viewModel = ChatViewModel()
     
     var body: some View {
-        NavigationStack {
-            ScrollView {
-                VStack(spacing: 16) {
-                    allMessageTitle
-                    chatGridView
-                }
-                .padding(.horizontal, 24)
+        ScrollView {
+            VStack(spacing: 16) {
+                allMessageTitle
+                chatGridView
             }
-            .background(Color(.neutral20))
-            .navigationTitle("Chat List")
-            .navigationBarTitleDisplayMode(.inline)
+            .padding(.horizontal, 24)
         }
+        .background(Color(.neutral20))
+        .navigationTitle("Chat List")
+        .navigationBarTitleDisplayMode(.inline)
     }
     
     private var allMessageTitle: some View {

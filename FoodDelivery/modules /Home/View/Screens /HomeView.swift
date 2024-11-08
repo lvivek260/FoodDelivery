@@ -12,22 +12,20 @@ struct HomeView: View {
     
 // MARK: - Body
     var body: some View {
-        NavigationStack {
-            ScrollView {
-                VStack(spacing: 24) {
-                    headerCardView
-                    
-                    VStack(spacing: 16) {
-                        findByCategoryView
-                        contentGridView
-                    }
-                    
-                    Spacer()
+        ScrollView {
+            VStack(spacing: 24) {
+                headerCardView
+                
+                VStack(spacing: 16) {
+                    findByCategoryView
+                    contentGridView
                 }
+                
+                Spacer()
             }
-            .background(Color(.neutral20))
-            .edgesIgnoringSafeArea(.top)
         }
+        .background(Color(.neutral20))
+        .edgesIgnoringSafeArea(.top)
     }
     
 // MARK: - Header Card Views
