@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ProfileSettingView: View {
-    private let viewModel = ProfileSettingViewModel()
+    @ObservedObject private var viewModel = ProfileSettingViewModel()
     
     var body: some View {
         ScrollView {
@@ -41,9 +41,9 @@ struct ProfileSettingView: View {
     }
     
     private var profileImageView: some View {
-        Image(.chat3)
-            .resizable()
-            .frame(width: 100, height: 100)
+        ProfileImageAndSelectionButton(
+            selectedImage: $viewModel.selectedImage
+        )
     }
     
     private var nameEmailView: some View {

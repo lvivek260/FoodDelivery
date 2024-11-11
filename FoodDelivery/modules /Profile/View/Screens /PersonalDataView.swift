@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct PersonalDataView: View {
+    @State var selectedImage: UIImage?
+    
+    // MARK: - Textfields
     @State var txtFullName: String = ""
     @State var txtDateOfBith: String = ""
     @State var txtGender: String = ""
@@ -17,7 +20,7 @@ struct PersonalDataView: View {
     var body: some View {
         ScrollView {
             VStack(spacing: 24) {
-                profileImage
+                ProfileImageAndSelectionButton(selectedImage: $selectedImage)
                 allTextFields
                 saveButtonView
             }
@@ -28,12 +31,6 @@ struct PersonalDataView: View {
         .customNavigation()
     }
     
-    private var profileImage: some View {
-        Image(.chat1)
-            .resizable()
-            .frame(width: 100, height: 100)
-    }
-    
     private var allTextFields: some View {
         VStack(spacing: 12) {
             fullNameTextFieldView
@@ -41,12 +38,6 @@ struct PersonalDataView: View {
             genderTextFieldView
             phoneTextFieldView
             emailTextFieldView
-        }
-    }
-    
-    private var saveButtonView: some View {
-        CustomButton(title: "Save") {
-            
         }
     }
     
@@ -81,7 +72,7 @@ struct PersonalDataView: View {
             title: "Phone",
             placeHolder: "Enter phone"
         )
-        .keyboardType(.phonePad)
+        .keyboardType(.numberPad)
     }
     
     private var emailTextFieldView: some View {
@@ -92,6 +83,12 @@ struct PersonalDataView: View {
         )
         .keyboardType(.emailAddress)
     }
+    
+    private var saveButtonView: some View {
+        CustomButton(title: "Save") {
+            
+        }
+    }
 }
 
 struct PersonalDataView_Previews: PreviewProvider {
@@ -99,3 +96,5 @@ struct PersonalDataView_Previews: PreviewProvider {
         PersonalDataView()
     }
 }
+
+

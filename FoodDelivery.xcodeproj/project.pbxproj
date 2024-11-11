@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		186ED1042CE1FDC800645A5C /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186ED1032CE1FDC800645A5C /* ImagePickerView.swift */; };
+		186ED1092CE207AF00645A5C /* ImagePickerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186ED1082CE207AF00645A5C /* ImagePickerButton.swift */; };
+		186ED10B2CE2104900645A5C /* ProfileImageAndSelectionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186ED10A2CE2104900645A5C /* ProfileImageAndSelectionButton.swift */; };
 		186F893B2CD3464F008DFB42 /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186F893A2CD3464F008DFB42 /* ForgotPasswordView.swift */; };
 		186F893D2CD34889008DFB42 /* ForgotPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186F893C2CD34889008DFB42 /* ForgotPasswordViewModel.swift */; };
 		186F893F2CD34B59008DFB42 /* ForgotPasswordBottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186F893E2CD34B59008DFB42 /* ForgotPasswordBottomSheetView.swift */; };
@@ -91,6 +94,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		186ED1032CE1FDC800645A5C /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
+		186ED1082CE207AF00645A5C /* ImagePickerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerButton.swift; sourceTree = "<group>"; };
+		186ED10A2CE2104900645A5C /* ProfileImageAndSelectionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImageAndSelectionButton.swift; sourceTree = "<group>"; };
 		186F893A2CD3464F008DFB42 /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
 		186F893C2CD34889008DFB42 /* ForgotPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewModel.swift; sourceTree = "<group>"; };
 		186F893E2CD34B59008DFB42 /* ForgotPasswordBottomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordBottomSheetView.swift; sourceTree = "<group>"; };
@@ -186,6 +192,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		186ED1052CE1FEC200645A5C /* ImagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				186ED1082CE207AF00645A5C /* ImagePickerButton.swift */,
+				186ED1032CE1FDC800645A5C /* ImagePickerView.swift */,
+			);
+			path = ImagePicker;
+			sourceTree = "<group>";
+		};
 		186F89382CD34623008DFB42 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -640,6 +655,7 @@
 		188946992CD26873001B5585 /* OtherItems  */ = {
 			isa = PBXGroup;
 			children = (
+				186ED1052CE1FEC200645A5C /* ImagePicker */,
 				1889469A2CD2689F001B5585 /* CustomToggleButton.swift */,
 				1875FEEB2CDA2B7C002685AB /* OTPView.swift */,
 				18DA960B2CDC906D00E95748 /* BlurView.swift */,
@@ -706,6 +722,7 @@
 			children = (
 				18AF00952CDDDFF300BD122E /* ProfileSettingView.swift */,
 				18AF00AC2CDE160D00BD122E /* PersonalDataView.swift */,
+				186ED10A2CE2104900645A5C /* ProfileImageAndSelectionButton.swift */,
 			);
 			path = "Screens ";
 			sourceTree = "<group>";
@@ -852,6 +869,7 @@
 				186F893D2CD34889008DFB42 /* ForgotPasswordViewModel.swift in Sources */,
 				18792FF22CDCF8B300893809 /* NotificationTitleWithGridCell.swift in Sources */,
 				18AF00A22CDE080900BD122E /* ProfileSettingCell.swift in Sources */,
+				186ED1042CE1FDC800645A5C /* ImagePickerView.swift in Sources */,
 				188045F92CDB78CD00475DA6 /* FindCategoryCell.swift in Sources */,
 				18792FEC2CDCF52000893809 /* NotificationViewModel.swift in Sources */,
 				18792FD52CDCC2D800893809 /* ChatListView.swift in Sources */,
@@ -869,6 +887,7 @@
 				18AF00962CDDDFF300BD122E /* ProfileSettingView.swift in Sources */,
 				18DA96102CDC942000E95748 /* CustomBackButton.swift in Sources */,
 				188045FB2CDB790400475DA6 /* CategoryContentCell.swift in Sources */,
+				186ED10B2CE2104900645A5C /* ProfileImageAndSelectionButton.swift in Sources */,
 				18AF009C2CDDE6A400BD122E /* TabViewModel.swift in Sources */,
 				1889468D2CD25498001B5585 /* PasswordTextField.swift in Sources */,
 				188045EE2CDB3C0000475DA6 /* HomeView.swift in Sources */,
@@ -891,6 +910,7 @@
 				1875FEE82CDA2457002685AB /* ResetPasswordViewViewModel.swift in Sources */,
 				188946872CD23FF8001B5585 /* CustomButton.swift in Sources */,
 				18AF009E2CDDEFD500BD122E /* CustomDevider.swift in Sources */,
+				186ED1092CE207AF00645A5C /* ImagePickerButton.swift in Sources */,
 				18792FDA2CDCCC5D00893809 /* ChatModel.swift in Sources */,
 				1873D5972CD0BB060041F016 /* FoodDeliveryApp.swift in Sources */,
 				1873D5CB2CD0EB790041F016 /* Font+Extension.swift in Sources */,

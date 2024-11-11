@@ -7,7 +7,9 @@
 
 import SwiftUI
 
-final class ProfileSettingViewModel {
+final class ProfileSettingViewModel: ObservableObject {
+    @Published var selectedImage: UIImage?
+    
     let cellData: [ProfileModel] = [
         .init(title: "Profile", data: [
             .init(navigationView: AnyView(PersonalDataView()), title: "Personal Data", image: .profile1),
