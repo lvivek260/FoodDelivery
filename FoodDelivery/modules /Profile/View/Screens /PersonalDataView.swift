@@ -8,19 +8,13 @@
 import SwiftUI
 
 struct PersonalDataView: View {
-    @State var selectedImage: UIImage?
     
-    // MARK: - Textfields
-    @State var txtFullName: String = ""
-    @State var txtDateOfBith: String = ""
-    @State var txtGender: String = ""
-    @State var txtPhoneNumber: String = ""
-    @State var txtEmail: String = ""
+    @ObservedObject private var viewModel = PersonalDataViewModel()
     
     var body: some View {
         ScrollView {
             VStack(spacing: 24) {
-                ProfileImageAndSelectionButton(selectedImage: $selectedImage)
+                ProfileImageAndSelectionButton(selectedImage: $viewModel.selectedImage)
                 allTextFields
                 saveButtonView
             }
@@ -43,7 +37,7 @@ struct PersonalDataView: View {
     
     private var fullNameTextFieldView: some View {
         CustomTextField(
-            text: $txtFullName,
+            text: $viewModel.txtFullName,
             title: "Full Name",
             placeHolder: "Enter name"
         )
@@ -52,7 +46,7 @@ struct PersonalDataView: View {
     private var dateOfBirthTextFieldView: some View {
         CustomDatePickerTextField(
             title: "Date of birth",
-            text: $txtDateOfBith,
+            text: $viewModel.txtDateOfBith,
             placeholder: "Enter date of birth"
         )
     }
@@ -60,7 +54,7 @@ struct PersonalDataView: View {
     private var genderTextFieldView: some View {
        CustomPickerTextfield(
            title: "Gender",
-           text: $txtGender,
+           text: $viewModel.txtGender,
            placeHolder: "Select gender",
            options: ["Male", "Female", "Others"]
        )
@@ -68,7 +62,7 @@ struct PersonalDataView: View {
     
     private var phoneTextFieldView: some View {
         CustomTextField(
-            text: $txtPhoneNumber,
+            text: $viewModel.txtPhoneNumber,
             title: "Phone",
             placeHolder: "Enter phone"
         )
@@ -77,7 +71,7 @@ struct PersonalDataView: View {
     
     private var emailTextFieldView: some View {
         CustomTextField(
-            text: $txtEmail,
+            text: $viewModel.txtEmail,
             title: "Email",
             placeHolder: "Enter email"
         )
