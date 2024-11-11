@@ -24,8 +24,8 @@ struct ProfileSettingView: View {
                     
                     signOutButton
                 }
-                .padding(24)
             }
+            .padding(24)
         }
         .background(Color(.neutral20))
         .navigationBarTitleDisplayMode(.inline)
@@ -41,7 +41,7 @@ struct ProfileSettingView: View {
     }
     
     private var profileImageView: some View {
-        Image(.chat1)
+        Image(.chat3)
             .resizable()
             .frame(width: 100, height: 100)
     }

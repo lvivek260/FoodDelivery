@@ -80,6 +80,11 @@
 		18AF00A62CDE09A100BD122E /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AF00A52CDE09A100BD122E /* ProfileViewModel.swift */; };
 		18AF00A82CDE0DCE00BD122E /* ProfileSectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AF00A72CDE0DCE00BD122E /* ProfileSectionCell.swift */; };
 		18AF00AB2CDE114300BD122E /* ProfileAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18AF00AA2CDE114300BD122E /* ProfileAssets.xcassets */; };
+		18AF00AD2CDE160D00BD122E /* PersonalDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AF00AC2CDE160D00BD122E /* PersonalDataView.swift */; };
+		18AF00B02CDE19D000BD122E /* CustomNavigationModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AF00AF2CDE19D000BD122E /* CustomNavigationModifier.swift */; };
+		18AF00B22CDE1A0200BD122E /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AF00B12CDE1A0200BD122E /* View+Extension.swift */; };
+		18AF00EE2CDE39AA00BD122E /* CustomPickerTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AF00ED2CDE39AA00BD122E /* CustomPickerTextfield.swift */; };
+		18B8DE572CE1D2FD0041567B /* DatePickerTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B8DE562CE1D2FD0041567B /* DatePickerTextField.swift */; };
 		18DA960C2CDC906D00E95748 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DA960B2CDC906D00E95748 /* BlurView.swift */; };
 		18DA96102CDC942000E95748 /* CustomBackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DA960F2CDC942000E95748 /* CustomBackButton.swift */; };
 		18DA96142CDCA09900E95748 /* PaymentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DA96132CDCA09900E95748 /* PaymentView.swift */; };
@@ -160,6 +165,11 @@
 		18AF00A52CDE09A100BD122E /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		18AF00A72CDE0DCE00BD122E /* ProfileSectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSectionCell.swift; sourceTree = "<group>"; };
 		18AF00AA2CDE114300BD122E /* ProfileAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ProfileAssets.xcassets; sourceTree = "<group>"; };
+		18AF00AC2CDE160D00BD122E /* PersonalDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDataView.swift; sourceTree = "<group>"; };
+		18AF00AF2CDE19D000BD122E /* CustomNavigationModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationModifier.swift; sourceTree = "<group>"; };
+		18AF00B12CDE1A0200BD122E /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
+		18AF00ED2CDE39AA00BD122E /* CustomPickerTextfield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPickerTextfield.swift; sourceTree = "<group>"; };
+		18B8DE562CE1D2FD0041567B /* DatePickerTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerTextField.swift; sourceTree = "<group>"; };
 		18DA960B2CDC906D00E95748 /* BlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BlurView.swift; path = ../../../../../../../../../Documents/BlurView.swift; sourceTree = "<group>"; };
 		18DA960F2CDC942000E95748 /* CustomBackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBackButton.swift; sourceTree = "<group>"; };
 		18DA96132CDCA09900E95748 /* PaymentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentView.swift; sourceTree = "<group>"; };
@@ -286,6 +296,7 @@
 				1873D5AE2CD0BD200041F016 /* Image+Extension.swift */,
 				1873D5CA2CD0EB790041F016 /* Font+Extension.swift */,
 				188946882CD24198001B5585 /* UIApplication+Extension .swift */,
+				18AF00B12CDE1A0200BD122E /* View+Extension.swift */,
 			);
 			path = "Extensions ";
 			sourceTree = "<group>";
@@ -574,6 +585,7 @@
 		188946852CD23FDD001B5585 /* CustomItems  */ = {
 			isa = PBXGroup;
 			children = (
+				18AF00AE2CDE19B800BD122E /* Modifiers  */,
 				188946982CD26859001B5585 /* Buttons  */,
 				188946972CD26845001B5585 /* TextFields  */,
 				188946992CD26873001B5585 /* OtherItems  */,
@@ -610,6 +622,8 @@
 			children = (
 				1889468A2CD24DB8001B5585 /* CustomTextField.swift */,
 				1889468C2CD25498001B5585 /* PasswordTextField.swift */,
+				18AF00ED2CDE39AA00BD122E /* CustomPickerTextfield.swift */,
+				18B8DE562CE1D2FD0041567B /* DatePickerTextField.swift */,
 			);
 			path = "TextFields ";
 			sourceTree = "<group>";
@@ -691,6 +705,7 @@
 			isa = PBXGroup;
 			children = (
 				18AF00952CDDDFF300BD122E /* ProfileSettingView.swift */,
+				18AF00AC2CDE160D00BD122E /* PersonalDataView.swift */,
 			);
 			path = "Screens ";
 			sourceTree = "<group>";
@@ -710,6 +725,14 @@
 				18AF00AA2CDE114300BD122E /* ProfileAssets.xcassets */,
 			);
 			path = "Resources ";
+			sourceTree = "<group>";
+		};
+		18AF00AE2CDE19B800BD122E /* Modifiers  */ = {
+			isa = PBXGroup;
+			children = (
+				18AF00AF2CDE19D000BD122E /* CustomNavigationModifier.swift */,
+			);
+			path = "Modifiers ";
 			sourceTree = "<group>";
 		};
 		18DA96112CDC9D5800E95748 /* Cells  */ = {
@@ -820,6 +843,7 @@
 				1889468B2CD24DB8001B5585 /* CustomTextField.swift in Sources */,
 				188045F32CDB567800475DA6 /* HomeViewModel.swift in Sources */,
 				186F89422CD3599A008DFB42 /* ForgotPasswordModel.swift in Sources */,
+				18AF00AD2CDE160D00BD122E /* PersonalDataView.swift in Sources */,
 				1873D5AF2CD0BD200041F016 /* Image+Extension.swift in Sources */,
 				1875FEE62CDA217B002685AB /* ResetPasswordView.swift in Sources */,
 				188045FD2CDB8BB300475DA6 /* ProductDetailView.swift in Sources */,
@@ -837,7 +861,9 @@
 				1873D5B12CD0BD370041F016 /* ImageConstants.swift in Sources */,
 				1889469B2CD2689F001B5585 /* CustomToggleButton.swift in Sources */,
 				188045F52CDB697F00475DA6 /* Category.swift in Sources */,
+				18AF00EE2CDE39AA00BD122E /* CustomPickerTextfield.swift in Sources */,
 				188946822CD22E2B001B5585 /* LoginAccountView .swift in Sources */,
+				18AF00B22CDE1A0200BD122E /* View+Extension.swift in Sources */,
 				1875FEEF2CDA41CB002685AB /* MyTabBarView.swift in Sources */,
 				18792FD72CDCCB7500893809 /* ChatCell.swift in Sources */,
 				18AF00962CDDDFF300BD122E /* ProfileSettingView.swift in Sources */,
@@ -846,11 +872,13 @@
 				18AF009C2CDDE6A400BD122E /* TabViewModel.swift in Sources */,
 				1889468D2CD25498001B5585 /* PasswordTextField.swift in Sources */,
 				188045EE2CDB3C0000475DA6 /* HomeView.swift in Sources */,
+				18B8DE572CE1D2FD0041567B /* DatePickerTextField.swift in Sources */,
 				1873D5B52CD0D94F0041F016 /* OnboardingView.swift in Sources */,
 				18792FE82CDCEFE900893809 /* NotificationModel.swift in Sources */,
 				1873D5C92CD0EA410041F016 /* FontConstants .swift in Sources */,
 				1875FEEA2CDA28DA002685AB /* PasswordChangedBottomSheetView.swift in Sources */,
 				188946772CD208C7001B5585 /* CustomPager.swift in Sources */,
+				18AF00B02CDE19D000BD122E /* CustomNavigationModifier.swift in Sources */,
 				18792FE62CDCEB5100893809 /* NotificationView.swift in Sources */,
 				186F89482CD38340008DFB42 /* EmailVerificationViewModel.swift in Sources */,
 				1889468F2CD26020001B5585 /* LoginAccountViewModel .swift in Sources */,

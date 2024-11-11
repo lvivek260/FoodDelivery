@@ -20,12 +20,7 @@ struct NotificationView: View {
             .padding(.vertical, 24)
         }
         .navigationTitle("Notification")
-        .navigationBarBackButtonHidden()
-        .toolbar {
-            ToolbarItem(placement: .navigationBarLeading) {
-                CustomBackButton()
-            }
-        }
+        .customNavigation()
     }
     
     private var notificationGridView: some View {

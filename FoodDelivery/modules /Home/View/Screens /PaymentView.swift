@@ -21,20 +21,14 @@ struct PaymentView: View {
                 }
                 
                 Spacer()
-
+                
                 chackoutNowButton
             }
             .padding(.horizontal, 24)
             .padding(.top, 16)
         }
-        .toolbar(.hidden, for: .tabBar)
         .navigationTitle("Payment")
-        .navigationBarBackButtonHidden()
-        .toolbar {
-            ToolbarItem(placement: .navigationBarLeading) {
-                CustomBackButton()
-            }
-        }
+        .customNavigation()
     }
     
     private var messegeTitleWithSubTitle: some View {

@@ -10,7 +10,7 @@ import SwiftUI
 final class ProfileSettingViewModel {
     let cellData: [ProfileModel] = [
         .init(title: "Profile", data: [
-            .init(navigationView: AnyView(OnboardingView()), title: "Personal Data", image: .profile1),
+            .init(navigationView: AnyView(PersonalDataView()), title: "Personal Data", image: .profile1),
             .init(navigationView: AnyView(OnboardingView()), title: "Settings", image: .profile2),
             .init(navigationView: AnyView(OnboardingView()), title: "Extra Card", image: .profile3)
         ]),

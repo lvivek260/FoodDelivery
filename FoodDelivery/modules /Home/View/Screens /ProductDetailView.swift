@@ -35,14 +35,9 @@ struct ProductDetailView: View {
             
             bottomAddToCartView
         }
-        .toolbar(.hidden, for: .tabBar)
+        .customNavigation()
         .navigationTitle("About This Menu")
-        .navigationBarBackButtonHidden(true)
         .toolbar {
-            ToolbarItem(placement: .navigationBarLeading) {
-                 CustomBackButton() 
-            }
-            
             ToolbarItem(placement: .navigationBarTrailing) {
                 shareToolBarButton
             }
