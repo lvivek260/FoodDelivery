@@ -81,8 +81,8 @@ enum ImageConstants: String {
     case profile5
     case profile6
     
-    case language1
-    case language2
-    case language3
-    case language4
+    case helpCenter1
+    case helpCenter2
+    case helpCenter3
+    case helpCenter4
 }

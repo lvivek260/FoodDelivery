@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "language4.svg",
+      "filename" : "Icon (1).svg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "Icon (1) 1.svg",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "Icon (1) 2.svg",
       "idiom" : "universal",
       "scale" : "3x"
     }

@@ -17,7 +17,7 @@ final class ProfileSettingViewModel: ObservableObject {
             .init(navigationView: AnyView(OnboardingView()), title: "Extra Card", image: .profile3)
         ]),
         .init(title: "Support", data: [
-            .init(navigationView: AnyView(OnboardingView()), title: "Help Center", image: .profile4),
+            .init(navigationView: AnyView(HelperCenterView()), title: "Help Center", image: .profile4),
             .init(navigationView: AnyView(OnboardingView()), title: "Request Account Deletion", image: .profile5),
             .init(navigationView: AnyView(OnboardingView()), title: "Add another account", image: .profile6)
         ])
