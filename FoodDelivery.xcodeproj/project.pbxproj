@@ -100,6 +100,8 @@
 		18DA960C2CDC906D00E95748 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DA960B2CDC906D00E95748 /* BlurView.swift */; };
 		18DA96102CDC942000E95748 /* CustomBackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DA960F2CDC942000E95748 /* CustomBackButton.swift */; };
 		18DA96142CDCA09900E95748 /* PaymentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DA96132CDCA09900E95748 /* PaymentView.swift */; };
+		18E1804C2CE34D67007D1DEF /* CustomAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E1804B2CE34D67007D1DEF /* CustomAlertView.swift */; };
+		18E1804E2CE35C9B007D1DEF /* CustomAlertModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E1804D2CE35C9B007D1DEF /* CustomAlertModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -197,6 +199,8 @@
 		18DA960B2CDC906D00E95748 /* BlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BlurView.swift; path = ../../../../../../../../../Documents/BlurView.swift; sourceTree = "<group>"; };
 		18DA960F2CDC942000E95748 /* CustomBackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBackButton.swift; sourceTree = "<group>"; };
 		18DA96132CDCA09900E95748 /* PaymentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentView.swift; sourceTree = "<group>"; };
+		18E1804B2CE34D67007D1DEF /* CustomAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertView.swift; sourceTree = "<group>"; };
+		18E1804D2CE35C9B007D1DEF /* CustomAlertModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -679,6 +683,7 @@
 				18DA960B2CDC906D00E95748 /* BlurView.swift */,
 				18DA960F2CDC942000E95748 /* CustomBackButton.swift */,
 				18AF009D2CDDEFD500BD122E /* CustomDevider.swift */,
+				18E1804B2CE34D67007D1DEF /* CustomAlertView.swift */,
 			);
 			path = "OtherItems ";
 			sourceTree = "<group>";
@@ -775,6 +780,7 @@
 			isa = PBXGroup;
 			children = (
 				18AF00AF2CDE19D000BD122E /* CustomNavigationModifier.swift */,
+				18E1804D2CE35C9B007D1DEF /* CustomAlertModifier.swift */,
 			);
 			path = "Modifiers ";
 			sourceTree = "<group>";
@@ -898,6 +904,7 @@
 				18792FF22CDCF8B300893809 /* NotificationTitleWithGridCell.swift in Sources */,
 				18AF00A22CDE080900BD122E /* ProfileSettingCell.swift in Sources */,
 				186ED1042CE1FDC800645A5C /* ImagePickerView.swift in Sources */,
+				18E1804C2CE34D67007D1DEF /* CustomAlertView.swift in Sources */,
 				188045F92CDB78CD00475DA6 /* FindCategoryCell.swift in Sources */,
 				18792FEC2CDCF52000893809 /* NotificationViewModel.swift in Sources */,
 				18792FD52CDCC2D800893809 /* ChatListView.swift in Sources */,
@@ -914,6 +921,7 @@
 				188946822CD22E2B001B5585 /* LoginAccountView .swift in Sources */,
 				18AF00B22CDE1A0200BD122E /* View+Extension.swift in Sources */,
 				1875FEEF2CDA41CB002685AB /* MyTabBarView.swift in Sources */,
+				18E1804E2CE35C9B007D1DEF /* CustomAlertModifier.swift in Sources */,
 				18792FD72CDCCB7500893809 /* ChatCell.swift in Sources */,
 				18AF00962CDDDFF300BD122E /* ProfileSettingView.swift in Sources */,
 				18DA96102CDC942000E95748 /* CustomBackButton.swift in Sources */,

@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ProfileSettingView: View {
     @ObservedObject private var viewModel = ProfileSettingViewModel()
+    @State private var signOutAlert: Bool = false
     
     var body: some View {
         ScrollView {
@@ -30,6 +31,17 @@ struct ProfileSettingView: View {
         .background(Color(.neutral20))
         .navigationBarTitleDisplayMode(.inline)
         .navigationTitle("Profile Settings")
+        .customAlert(
+            isPresented: $signOutAlert,
+            title: "Sign Out",
+            message: "Do you want to log out?",
+            firstBtnTitle: "cancel", firstAction: {
+                signOutAlert = false
+            }, secondBtnTitle: "Log Out", secondAction: {
+                signOutAlert = false
+                UIApplication.shared.changeRootViewController(to: LoginAccountView())
+            }
+        )
     }
     
 // MARK: - Header Profile View
@@ -155,7 +167,9 @@ struct ProfileSettingView: View {
     }
     
     var signOutButton: some View {
-        Button(action: {}, label: {
+        Button(action: {
+            signOutAlert  = true
+        }, label: {
             HStack(spacing: 8) {
                 Image(.signOut)
                     .resizable()
