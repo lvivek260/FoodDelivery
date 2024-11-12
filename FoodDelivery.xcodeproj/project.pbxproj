@@ -102,6 +102,10 @@
 		18DA96142CDCA09900E95748 /* PaymentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DA96132CDCA09900E95748 /* PaymentView.swift */; };
 		18E1804C2CE34D67007D1DEF /* CustomAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E1804B2CE34D67007D1DEF /* CustomAlertView.swift */; };
 		18E1804E2CE35C9B007D1DEF /* CustomAlertModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E1804D2CE35C9B007D1DEF /* CustomAlertModifier.swift */; };
+		18E180552CE37FD4007D1DEF /* ExtraCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E180542CE37FD4007D1DEF /* ExtraCardView.swift */; };
+		18E180572CE38359007D1DEF /* ExtraCardAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18E180562CE38359007D1DEF /* ExtraCardAssets.xcassets */; };
+		18E180592CE39272007D1DEF /* CreditCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E180582CE39272007D1DEF /* CreditCardCell.swift */; };
+		18E1805B2CE39680007D1DEF /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E1805A2CE39680007D1DEF /* CardModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -201,6 +205,10 @@
 		18DA96132CDCA09900E95748 /* PaymentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentView.swift; sourceTree = "<group>"; };
 		18E1804B2CE34D67007D1DEF /* CustomAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertView.swift; sourceTree = "<group>"; };
 		18E1804D2CE35C9B007D1DEF /* CustomAlertModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertModifier.swift; sourceTree = "<group>"; };
+		18E180542CE37FD4007D1DEF /* ExtraCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtraCardView.swift; sourceTree = "<group>"; };
+		18E180562CE38359007D1DEF /* ExtraCardAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ExtraCardAssets.xcassets; sourceTree = "<group>"; };
+		18E180582CE39272007D1DEF /* CreditCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardCell.swift; sourceTree = "<group>"; };
+		18E1805A2CE39680007D1DEF /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -348,6 +356,7 @@
 				18792FD22CDCC2B100893809 /* Chat */,
 				18792FED2CDCF7F700893809 /* Notification */,
 				18AF00912CDDDF4300BD122E /* Profile */,
+				18E1804F2CE37F60007D1DEF /* ExtraCard */,
 			);
 			path = "modules ";
 			sourceTree = "<group>";
@@ -804,6 +813,49 @@
 			path = "Screens ";
 			sourceTree = "<group>";
 		};
+		18E1804F2CE37F60007D1DEF /* ExtraCard */ = {
+			isa = PBXGroup;
+			children = (
+				18E180502CE37F6F007D1DEF /* Resources  */,
+				18E180512CE37F79007D1DEF /* Model */,
+				18E180522CE37F85007D1DEF /* View */,
+				18E180532CE37F90007D1DEF /* ViewModel */,
+			);
+			path = ExtraCard;
+			sourceTree = "<group>";
+		};
+		18E180502CE37F6F007D1DEF /* Resources  */ = {
+			isa = PBXGroup;
+			children = (
+				18E180562CE38359007D1DEF /* ExtraCardAssets.xcassets */,
+			);
+			path = "Resources ";
+			sourceTree = "<group>";
+		};
+		18E180512CE37F79007D1DEF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				18E1805A2CE39680007D1DEF /* CardModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		18E180522CE37F85007D1DEF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				18E180542CE37FD4007D1DEF /* ExtraCardView.swift */,
+				18E180582CE39272007D1DEF /* CreditCardCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		18E180532CE37F90007D1DEF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -869,6 +921,7 @@
 				18792FE02CDCD13C00893809 /* ChatAssets.xcassets in Resources */,
 				1873D60A2CD0F0E30041F016 /* Inter-Medium.ttf in Resources */,
 				1873D5BB2CD0DA920041F016 /* OnboardingAssets .xcassets in Resources */,
+				18E180572CE38359007D1DEF /* ExtraCardAssets.xcassets in Resources */,
 				18792FE42CDCE23800893809 /* TabViewAssets.xcassets in Resources */,
 				1873D6092CD0F0E30041F016 /* Inter-Regular.ttf in Resources */,
 				188946842CD23C94001B5585 /* LoginAssets .xcassets in Resources */,
@@ -901,6 +954,7 @@
 				188045F72CDB698E00475DA6 /* CategoryContent.swift in Sources */,
 				188946942CD2625F001B5585 /* CreateAccountView .swift in Sources */,
 				186F893D2CD34889008DFB42 /* ForgotPasswordViewModel.swift in Sources */,
+				18E180552CE37FD4007D1DEF /* ExtraCardView.swift in Sources */,
 				18792FF22CDCF8B300893809 /* NotificationTitleWithGridCell.swift in Sources */,
 				18AF00A22CDE080900BD122E /* ProfileSettingCell.swift in Sources */,
 				186ED1042CE1FDC800645A5C /* ImagePickerView.swift in Sources */,
@@ -958,6 +1012,8 @@
 				1873D5CB2CD0EB790041F016 /* Font+Extension.swift in Sources */,
 				186ED1112CE2292100645A5C /* SelectLanguageView.swift in Sources */,
 				18792FEA2CDCF0FD00893809 /* NotificationCell.swift in Sources */,
+				18E1805B2CE39680007D1DEF /* CardModel.swift in Sources */,
+				18E180592CE39272007D1DEF /* CreditCardCell.swift in Sources */,
 				188946962CD262E1001B5585 /* CreateAccountViewModel.swift in Sources */,
 				18AF00A82CDE0DCE00BD122E /* ProfileSectionCell.swift in Sources */,
 				18DA960C2CDC906D00E95748 /* BlurView.swift in Sources */,

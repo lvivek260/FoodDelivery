@@ -85,4 +85,7 @@ enum ImageConstants: String {
     case helpCenter2
     case helpCenter3
     case helpCenter4
+    
+    case extraCardBackground
+    case twoCirclesIcon
 }

@@ -14,7 +14,7 @@ final class ProfileSettingViewModel: ObservableObject {
         .init(title: "Profile", data: [
             .init(navigationView: AnyView(PersonalDataView()), title: "Personal Data", image: .profile1),
             .init(navigationView: AnyView(SettingView()), title: "Settings", image: .profile2),
-            .init(navigationView: AnyView(OnboardingView()), title: "Extra Card", image: .profile3)
+            .init(navigationView: AnyView(ExtraCardView()), title: "Extra Card", image: .profile3)
         ]),
         .init(title: "Support", data: [
             .init(navigationView: AnyView(HelperCenterView()), title: "Help Center", image: .profile4),
