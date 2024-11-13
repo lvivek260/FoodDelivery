@@ -10,6 +10,7 @@ import Foundation
 enum ImageConstants: String {
     //Global Images
     case backButtonIcon
+    case cancelButtonIcon
 
     //Tab View Images
     case homeTabIcon
@@ -88,4 +89,9 @@ enum ImageConstants: String {
     
     case extraCardBackground
     case twoCirclesIcon
+    case deleteIcon
+    case cardIcon
+    case applePayIcon
+    case mastercardIcon
+    case paypalIcon
 }

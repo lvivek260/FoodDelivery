@@ -16,9 +16,9 @@ extension View {
                      title: String,
                      message: String,
                      firstBtnTitle: String,
-                     firstAction: @escaping ()->Void,
+                     firstAction: @escaping ()->Void = {},
                      secondBtnTitle: String,
-                     secondAction: @escaping ()->Void
+                     secondAction: @escaping ()->Void = {}
     ) -> some View {
         self.modifier(
             CustomAlertModifier(

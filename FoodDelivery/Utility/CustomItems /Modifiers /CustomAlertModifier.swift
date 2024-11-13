@@ -13,9 +13,9 @@ struct CustomAlertModifier: ViewModifier {
     let title: String
     let subTitle: String
     let firstBtnTitle: String
-    let firstAction: ()->Void
+    var firstAction: ()->Void = {}
     let secondBtnTitle: String
-    let secondAction: ()->Void
+    var secondAction: ()->Void = {}
     
     func body(content: Content) -> some View {
         ZStack {
@@ -26,15 +26,18 @@ struct CustomAlertModifier: ViewModifier {
                         .edgesIgnoringSafeArea(.all)
                 
                 CustomAlertView(
+                    isPresent: $isPresented,
                     title: title,
                     subTitle: subTitle,
                     firstBtnTitle: firstBtnTitle,
                     firstAction:  {
                         firstAction()
+                        isPresented = false
                     },
                     secondBtnTitle: secondBtnTitle,
                     secondAction: {
                         secondAction()
+                        isPresented = false
                     }
                 )
                 

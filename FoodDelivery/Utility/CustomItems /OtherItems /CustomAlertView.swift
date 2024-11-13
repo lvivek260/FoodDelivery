@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct CustomAlertView: View {
+    @Binding var isPresent: Bool
     let title: String
     let subTitle: String 
     let firstBtnTitle: String
@@ -17,8 +18,16 @@ struct CustomAlertView: View {
     
     var body: some View {
         VStack(spacing: 24) {
-            titleView
+            HStack(spacing: 4) {
+                emptyView
+                Spacer()
+                titleView
+                Spacer()
+                cancelButton
+            }
+            
             subTitleView
+            
             HStack(spacing: 16) {
                 firstButton
                 secondButton
@@ -32,13 +41,21 @@ struct CustomAlertView: View {
         .padding(24)
     }
     
+    private var emptyView: some View {
+        Rectangle()
+            .fill(.clear)
+            .frame(width: 36, height: 36)
+    }
+    
     private var titleView: some View {
         Text(title)
+            .multilineTextAlignment(.center)
             .font(.system(size: 24, weight: .semibold))
     }
     
     private var subTitleView: some View {
         Text(subTitle)
+            .multilineTextAlignment(.center)
             .font(.system(size: 14, weight: .medium))
             .foregroundColor(Color(.neutral60))
     }
@@ -70,10 +87,13 @@ struct CustomAlertView: View {
     }
     
     private var cancelButton: some View {
-        Image(.whatsAppIcon)
-            .resizable()
-            .frame(width: 36, height: 36)
-           
+       Button(action: {
+           isPresent = false
+       }) {
+           Image(.cardIcon)
+               .resizable()
+               .frame(width: 36, height: 36)
+       }
     }
 }
 

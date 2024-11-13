@@ -8,14 +8,38 @@
 import SwiftUI
 
 struct ExtraCardView: View {
+    @ObservedObject private var viewModel = ExtraCardViewModel()
+    @State private var deleteCardAlert: Bool = false
+    
     var body: some View {
-        ScrollView {
-            VStack(spacing: 24) {
-                cardView
-                creditCardGridView
+        VStack {
+            ScrollView {
+                VStack(spacing: 24) {
+                    cardView
+                    creditCardGridView
+                }
+                .padding(24)
             }
-            .padding(24)
+            Spacer()
+            addNewCardButtonView
         }
+        .toolbar {
+            ToolbarItem(placement: .navigationBarTrailing) {
+                Button(action: {
+                    deleteCardAlert = true
+                }) {
+                    Image(.deleteIcon)
+                }
+            }
+        }
+        
+        .customAlert(
+            isPresented: $deleteCardAlert,
+            title: "Confirm Delete",
+            message: "Are you sure to delete this card?",
+            firstBtnTitle: "No, I won't",
+            secondBtnTitle: "Yes, Of course")
+        
         .navigationTitle("Extra Card")
         .customNavigation()
     }
@@ -63,13 +87,19 @@ struct ExtraCardView: View {
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .font(.system(size: 16, weight: .medium))
             
-            LazyVGrid(columns: [GridItem(.flexible())]) {
-                ForEach(0...10, id: \.self) { value in
-//                    CreditCardCell(card: CardModel, selectedCard: Binding<CardModel>)
-                    EmptyView()
+            LazyVGrid(columns: [GridItem(.flexible())], spacing: 20) {
+                ForEach(viewModel.cards, id: \.self) { card in
+                    CreditCardCell(card: card, selectedCard: $viewModel.selectedCard)
                 }
             }
         }
+    }
+    
+    private var addNewCardButtonView: some View {
+        CustomButton(title: "Add New Card") {
+            
+        }
+        .padding(.horizontal, 24)
     }
 }
 
