@@ -15,7 +15,12 @@ struct SearchFoodView: View {
             VStack(spacing: 24) {
                 searchTextFeild
                 categoryGridView
-                RecentSearchesTitleView
+                VStack(spacing: 16) {
+                    recentSearchesTitleView
+                    recentSearchesView
+                }
+                Divider()
+                myRecentOrders
             }
             .padding(.vertical, 16)
             .padding(.horizontal, 24)
@@ -26,14 +31,25 @@ struct SearchFoodView: View {
     }
     
     private var searchTextFeild: some View {
-        Rectangle()
-            .frame(width: .infinity, height: 44)
+        HStack {
+            Image(systemName: "magnifyingglass")
+                .resizable()
+                .frame(width: 16, height: 16)
+                .foregroundColor(Color(.neutral50))
+                
+            TextField("Search Food", text: $viewModel.txtSearch)
+        }
+        .padding(16)
+        .overlay {
+            RoundedRectangle(cornerRadius: 8)
+                .stroke(Color(.neutral50))
+        }
     }
     
     private var categoryGridView: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             let deviceWidth = UIScreen.main.bounds.width
-            let contentWidth = (24.0*2) + (60.0*4)  // 24*2 padding, 60*4 cell width
+            let contentWidth = (24.0*2) + (60.0*4)  // 24*2 padding(leading, trailing), 60*4 cell width
             let spacing = (deviceWidth - contentWidth)/3.0
             LazyHGrid(rows: [GridItem(.flexible())], spacing: spacing) {
                 ForEach(viewModel.categorys, id: \.self) { category in
@@ -51,11 +67,13 @@ struct SearchFoodView: View {
         .frame(height: 65)
     }
     
-    private var RecentSearchesTitleView: some View {
+    private var recentSearchesTitleView: some View {
         HStack {
             Text("Recent searches")
                 .font(.system(size: 16, weight: .semibold))
+            
             Spacer()
+            
             Button(action: {}) {
                 Text("Delete")
                     .font(.system(size: 14, weight: .medium))
@@ -63,7 +81,29 @@ struct SearchFoodView: View {
             }
         }
     }
+    
+    private var recentSearchesView: some View {
+        LazyVGrid(columns: [GridItem(.flexible())], spacing: 16) {
+            ForEach(viewModel.recentSearches, id: \.self) { searchTitle in
+                RecentSearchesView(title: searchTitle)
+            }
+        }
+    }
+    
+    private var myRecentOrders: some View {
+        VStack(alignment: .leading, spacing: 16) {
+            Text("My recent orders")
+                .font(.system(size: 16, weight: .semibold))
+            
+            LazyVGrid(columns: [GridItem(.flexible())], spacing: 16) {
+                ForEach(viewModel.recentOrders, id: \.self) { recentOrder in
+                    MyRecentOrdersCell(order: recentOrder)
+                }
+            }
+        }
+    }
 }
+
 
 struct SearchFoodView_Previews: PreviewProvider {
     static var previews: some View {

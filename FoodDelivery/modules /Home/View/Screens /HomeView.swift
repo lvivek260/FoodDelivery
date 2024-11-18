@@ -91,7 +91,7 @@ struct HomeView: View {
     }
     
     private var searchButton: some View {
-        NavigationLink(destination: OnboardingView()) {
+        NavigationLink(destination: SearchFoodView()) {
             Image(.searchIcon)
                 .resizable()
                 .frame(width: 40, height: 40)

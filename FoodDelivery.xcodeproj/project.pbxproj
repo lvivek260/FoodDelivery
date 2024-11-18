@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		181F93992CE4871C00A959BC /* AddNewCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181F93982CE4871C00A959BC /* AddNewCardView.swift */; };
 		181F939B2CE48A6F00A959BC /* AddCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181F939A2CE48A6F00A959BC /* AddCardViewModel.swift */; };
+		1827F1882CEB65B500D98F7D /* RecentOrderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1827F1872CEB65B500D98F7D /* RecentOrderModel.swift */; };
+		1827F18A2CEB695D00D98F7D /* MyRecentOrdersCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1827F1892CEB695D00D98F7D /* MyRecentOrdersCell.swift */; };
 		186BE5242CE7595F00A59722 /* RecentSearchesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186BE5232CE7595F00A59722 /* RecentSearchesView.swift */; };
 		186D35E62CE74E3B00FB22EB /* SearchFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186D35E52CE74E3B00FB22EB /* SearchFoodView.swift */; };
 		186ED1042CE1FDC800645A5C /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186ED1032CE1FDC800645A5C /* ImagePickerView.swift */; };
@@ -121,6 +123,8 @@
 /* Begin PBXFileReference section */
 		181F93982CE4871C00A959BC /* AddNewCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewCardView.swift; sourceTree = "<group>"; };
 		181F939A2CE48A6F00A959BC /* AddCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCardViewModel.swift; sourceTree = "<group>"; };
+		1827F1872CEB65B500D98F7D /* RecentOrderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentOrderModel.swift; sourceTree = "<group>"; };
+		1827F1892CEB695D00D98F7D /* MyRecentOrdersCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRecentOrdersCell.swift; sourceTree = "<group>"; };
 		186BE5232CE7595F00A59722 /* RecentSearchesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentSearchesView.swift; sourceTree = "<group>"; };
 		186D35E52CE74E3B00FB22EB /* SearchFoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFoodView.swift; sourceTree = "<group>"; };
 		186ED1032CE1FDC800645A5C /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
@@ -242,11 +246,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		186D35E22CE74DD400FB22EB /* SearchFood */ = {
+		1827F18B2CEB762000D98F7D /* View */ = {
 			isa = PBXGroup;
 			children = (
 				186D35E52CE74E3B00FB22EB /* SearchFoodView.swift */,
 				186BE5232CE7595F00A59722 /* RecentSearchesView.swift */,
+				1827F1892CEB695D00D98F7D /* MyRecentOrdersCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1827F18C2CEB762A00D98F7D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1827F1872CEB65B500D98F7D /* RecentOrderModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		186D35E22CE74DD400FB22EB /* SearchFood */ = {
+			isa = PBXGroup;
+			children = (
+				1827F18C2CEB762A00D98F7D /* Model */,
+				1827F18B2CEB762000D98F7D /* View */,
 			);
 			path = SearchFood;
 			sourceTree = "<group>";
@@ -1029,6 +1051,7 @@
 				18AF00AD2CDE160D00BD122E /* PersonalDataView.swift in Sources */,
 				1873D5AF2CD0BD200041F016 /* Image+Extension.swift in Sources */,
 				1892796D2CEB42F1003F92D3 /* CartProductCell.swift in Sources */,
+				1827F18A2CEB695D00D98F7D /* MyRecentOrdersCell.swift in Sources */,
 				186ED10F2CE21FF500645A5C /* SettingView.swift in Sources */,
 				1875FEE62CDA217B002685AB /* ResetPasswordView.swift in Sources */,
 				188045FD2CDB8BB300475DA6 /* ProductDetailView.swift in Sources */,
@@ -1047,6 +1070,7 @@
 				186F89442CD3634A008DFB42 /* NavigationButton.swift in Sources */,
 				18AF00A42CDE088800BD122E /* ProfileModel.swift in Sources */,
 				181F93992CE4871C00A959BC /* AddNewCardView.swift in Sources */,
+				1827F1882CEB65B500D98F7D /* RecentOrderModel.swift in Sources */,
 				186ED1192CE233CF00645A5C /* LanguageModel.swift in Sources */,
 				188946892CD24198001B5585 /* UIApplication+Extension .swift in Sources */,
 				1873D5B12CD0BD370041F016 /* ImageConstants.swift in Sources */,

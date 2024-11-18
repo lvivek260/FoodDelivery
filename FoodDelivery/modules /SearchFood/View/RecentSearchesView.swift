@@ -22,8 +22,8 @@ struct RecentSearchesView: View {
     private var searchImage: some View {
         Image(systemName: "magnifyingglass")
             .resizable()
-            .frame(width: 24, height: 24)
-            .tint(Color(.neutral60))
+            .frame(width: 20, height: 20)
+            .foregroundColor(Color(.neutral60))
     }
     
     private var titleView: some View {
@@ -37,7 +37,7 @@ struct RecentSearchesView: View {
         }) {
             Image(systemName: "xmark")
                 .resizable()
-                .frame(width: 24, height: 24)
+                .frame(width: 14, height: 14)
                 .tint(Color(.neutral60))
         }
     }
