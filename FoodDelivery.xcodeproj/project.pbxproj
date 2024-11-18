@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		181F93992CE4871C00A959BC /* AddNewCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181F93982CE4871C00A959BC /* AddNewCardView.swift */; };
+		181F939B2CE48A6F00A959BC /* AddCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181F939A2CE48A6F00A959BC /* AddCardViewModel.swift */; };
+		186BE5242CE7595F00A59722 /* RecentSearchesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186BE5232CE7595F00A59722 /* RecentSearchesView.swift */; };
+		186D35E62CE74E3B00FB22EB /* SearchFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186D35E52CE74E3B00FB22EB /* SearchFoodView.swift */; };
 		186ED1042CE1FDC800645A5C /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186ED1032CE1FDC800645A5C /* ImagePickerView.swift */; };
 		186ED1092CE207AF00645A5C /* ImagePickerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186ED1082CE207AF00645A5C /* ImagePickerButton.swift */; };
 		186ED10B2CE2104900645A5C /* ProfileImageAndSelectionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186ED10A2CE2104900645A5C /* ProfileImageAndSelectionButton.swift */; };
@@ -110,6 +114,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		181F93982CE4871C00A959BC /* AddNewCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewCardView.swift; sourceTree = "<group>"; };
+		181F939A2CE48A6F00A959BC /* AddCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCardViewModel.swift; sourceTree = "<group>"; };
+		186BE5232CE7595F00A59722 /* RecentSearchesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentSearchesView.swift; sourceTree = "<group>"; };
+		186D35E52CE74E3B00FB22EB /* SearchFoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFoodView.swift; sourceTree = "<group>"; };
 		186ED1032CE1FDC800645A5C /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
 		186ED1082CE207AF00645A5C /* ImagePickerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerButton.swift; sourceTree = "<group>"; };
 		186ED10A2CE2104900645A5C /* ProfileImageAndSelectionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImageAndSelectionButton.swift; sourceTree = "<group>"; };
@@ -224,6 +232,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		186D35E22CE74DD400FB22EB /* SearchFood */ = {
+			isa = PBXGroup;
+			children = (
+				186D35E52CE74E3B00FB22EB /* SearchFoodView.swift */,
+				186BE5232CE7595F00A59722 /* RecentSearchesView.swift */,
+			);
+			path = SearchFood;
+			sourceTree = "<group>";
+		};
 		186ED1052CE1FEC200645A5C /* ImagePicker */ = {
 			isa = PBXGroup;
 			children = (
@@ -355,8 +372,9 @@
 				1889467C2CD22DC1001B5585 /* Login */,
 				1875FEED2CDA41AB002685AB /* TabView  */,
 				188045E92CDB3B3100475DA6 /* Home */,
-				18792FD22CDCC2B100893809 /* Chat */,
+				186D35E22CE74DD400FB22EB /* SearchFood */,
 				18792FED2CDCF7F700893809 /* Notification */,
+				18792FD22CDCC2B100893809 /* Chat */,
 				18AF00912CDDDF4300BD122E /* Profile */,
 				18E1804F2CE37F60007D1DEF /* ExtraCard */,
 			);
@@ -847,6 +865,7 @@
 			children = (
 				18E180542CE37FD4007D1DEF /* ExtraCardView.swift */,
 				18E180582CE39272007D1DEF /* CreditCardCell.swift */,
+				181F93982CE4871C00A959BC /* AddNewCardView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -855,6 +874,7 @@
 			isa = PBXGroup;
 			children = (
 				187AE13B2CE4733E007B0D0E /* ExtraCardViewModel.swift */,
+				181F939A2CE48A6F00A959BC /* AddCardViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -954,6 +974,7 @@
 				186ED10F2CE21FF500645A5C /* SettingView.swift in Sources */,
 				1875FEE62CDA217B002685AB /* ResetPasswordView.swift in Sources */,
 				188045FD2CDB8BB300475DA6 /* ProductDetailView.swift in Sources */,
+				186D35E62CE74E3B00FB22EB /* SearchFoodView.swift in Sources */,
 				188045F72CDB698E00475DA6 /* CategoryContent.swift in Sources */,
 				188946942CD2625F001B5585 /* CreateAccountView .swift in Sources */,
 				186F893D2CD34889008DFB42 /* ForgotPasswordViewModel.swift in Sources */,
@@ -967,6 +988,7 @@
 				18792FD52CDCC2D800893809 /* ChatListView.swift in Sources */,
 				186F89442CD3634A008DFB42 /* NavigationButton.swift in Sources */,
 				18AF00A42CDE088800BD122E /* ProfileModel.swift in Sources */,
+				181F93992CE4871C00A959BC /* AddNewCardView.swift in Sources */,
 				186ED1192CE233CF00645A5C /* LanguageModel.swift in Sources */,
 				188946892CD24198001B5585 /* UIApplication+Extension .swift in Sources */,
 				1873D5B12CD0BD370041F016 /* ImageConstants.swift in Sources */,
@@ -999,6 +1021,7 @@
 				186F89482CD38340008DFB42 /* EmailVerificationViewModel.swift in Sources */,
 				1889468F2CD26020001B5585 /* LoginAccountViewModel .swift in Sources */,
 				186ED11D2CE23D2400645A5C /* HelpCenterViewModel.swift in Sources */,
+				186BE5242CE7595F00A59722 /* RecentSearchesView.swift in Sources */,
 				1889467B2CD2296C001B5585 /* OnboardingViewModel.swift in Sources */,
 				1873D5AB2CD0BCC80041F016 /* Color+Extension.swift in Sources */,
 				18AF00A62CDE09A100BD122E /* ProfileViewModel.swift in Sources */,
@@ -1021,6 +1044,7 @@
 				18AF00A82CDE0DCE00BD122E /* ProfileSectionCell.swift in Sources */,
 				18DA960C2CDC906D00E95748 /* BlurView.swift in Sources */,
 				18DA96142CDCA09900E95748 /* PaymentView.swift in Sources */,
+				181F939B2CE48A6F00A959BC /* AddCardViewModel.swift in Sources */,
 				187AE13C2CE4733E007B0D0E /* ExtraCardViewModel.swift in Sources */,
 				186F893B2CD3464F008DFB42 /* ForgotPasswordView.swift in Sources */,
 				186F893F2CD34B59008DFB42 /* ForgotPasswordBottomSheetView.swift in Sources */,

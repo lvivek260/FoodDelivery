@@ -29,6 +29,7 @@ struct EmailVerificationView: View {
             
             Spacer()
         }
+        .customNavigation()
         .navigationTitle("OTP")
         .padding(.horizontal, 24)
         .padding(.vertical, 32)

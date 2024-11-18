@@ -22,6 +22,7 @@ struct ForgotPasswordView: View {
             
             Spacer()
         }
+        .customNavigation()
         .padding(.horizontal, 24)
         .padding(.vertical, 32)
     }

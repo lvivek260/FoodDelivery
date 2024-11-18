@@ -90,7 +90,7 @@ struct CustomAlertView: View {
        Button(action: {
            isPresent = false
        }) {
-           Image(.cardIcon)
+           Image(.cancelButtonIcon)
                .resizable()
                .frame(width: 36, height: 36)
        }

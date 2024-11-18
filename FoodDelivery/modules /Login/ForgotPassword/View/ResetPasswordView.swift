@@ -28,6 +28,7 @@ struct ResetPasswordView: View {
             verifyAccountBtn
         }
         .navigationTitle("Reset Password")
+        .customNavigation()
         .padding(.vertical, 16)
         .padding(.horizontal, 24)
     }
