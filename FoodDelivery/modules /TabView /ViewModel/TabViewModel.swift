@@ -10,6 +10,7 @@ import SwiftUI
 final class TabViewModel {
     let tabBarData: [TabModel] = [
         .init(view: AnyView(HomeView()), image: .homeTabIcon, text: "Home"),
+        .init(view: AnyView(MyCartView()), image: .shopTabIcon, text: "Cart"),
         .init(view: AnyView(ChatListView()), image: .messageTabIcon, text: "Chat"),
         .init(view: AnyView(ProfileSettingView()), image: .personTabIcon, text: "Profile")
     ]

@@ -94,4 +94,10 @@ enum ImageConstants: String {
     case applePayIcon
     case mastercardIcon
     case paypalIcon
+    
+    //cart
+    case cart1
+    case cart2
+    case cart3
+    case myCartEmptyView
 }
