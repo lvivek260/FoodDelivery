@@ -40,4 +40,4 @@ To get this project running on your local machine:
 1. **Clone the repository:**  
 
    ```bash  
-   git clone https://github.com/lvivek260/Food-Delivery-SwiftUI.git  
+   git clone https://github.com/lvivek260/FoodDelivery.git  
